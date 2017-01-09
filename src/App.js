@@ -5,7 +5,7 @@ import './App.css';
 class Nav extends Component {
   render() {
     return (
-      <h3> a nav bar goes here </h3>
+      <h3> a nav bar will here! </h3>
 //         <Navbar inverse collapseOnSelect>
 //           <Navbar.Header>
 //             <Navbar.Brand>
