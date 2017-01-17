@@ -39,6 +39,7 @@ class Home extends Component {
       <div className="Home">
         <h1 id="name"> Vince Roti </h1>
         <h4> Web Developer </h4>
+        <img id="vince" src="vince.jpg" alt="Vince Roti"/>
       </div>
     );
   }
