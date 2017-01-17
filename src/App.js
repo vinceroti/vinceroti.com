@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav, MenuItem} from 'react-bootstrap';
-import logo from './logo.svg';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import './styles/App.css';
-
-
+import './styles/freelancer.less';
 
 
 const NavBar = React.createClass({
