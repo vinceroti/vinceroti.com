@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav, MenuItem} from 'react-bootstrap';
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
 
 
@@ -37,9 +37,9 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
+        <img id="vince" src="vince.jpg" alt="Vince Roti"/>
         <h1 id="name"> Vince Roti </h1>
         <h4> Web Developer </h4>
-        <img id="vince" src="vince.jpg" alt="Vince Roti"/>
       </div>
     );
   }
