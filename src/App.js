@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { Navbar, NavItem, Nav, MenuItem} from 'react-bootstrap';
 import logo from './logo.svg';
 import './App.css';
+
+
+
 
 const NavBar = React.createClass({
   handleSelect(selectedKey) {
@@ -10,13 +13,21 @@ const NavBar = React.createClass({
 
   render() {
     return (
-      <div>
-        <Nav bsStyle="tabs" justified activeKey={1} onSelect={this.handleSelect}>
-          <NavItem eventKey={1}>About Me</NavItem>
-          <NavItem eventKey={2}>Projects</NavItem>
-          <NavItem eventKey={3}>Resume</NavItem>
-        </Nav>
-      </div>
+     <Navbar inverse>
+         <Navbar.Header>
+           <Navbar.Brand>
+             <a href="#">Vince Roti</a>
+           </Navbar.Brand>
+           <Navbar.Toggle />
+         </Navbar.Header>
+         <Navbar.Collapse>
+           <Nav pullRight>
+             <NavItem eventKey={1} href="#">Portfolio</NavItem>
+             <NavItem eventKey={2} href="#">About</NavItem>
+             <NavItem eventKey={3} target="_blank" href="VinceRoti.pdf">Resume</NavItem>
+           </Nav>
+         </Navbar.Collapse>
+       </Navbar>
     );
   }
 });
@@ -33,4 +44,4 @@ class Home extends Component {
   }
 }
 
-export { Home, NavBar };
+export { Home, NavBar }
