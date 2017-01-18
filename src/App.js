@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav, Glyphicon } from 'react-bootstrap';
 import './styles/App.css';
-import FontAwesome from 'react-fontawesome';
+import Radium from 'radium';
+
 
 const styles = {
 
@@ -22,6 +23,14 @@ const styles = {
     textAlign: 'center',
     maxWidth: '250px',
     margin: '25px auto 30px',
+    ':after': {
+      content: 'test',
+      display: 'inlineBlock',
+      position: 'relative',
+      top: '-0.8em',
+      fontSize: '2em',
+      padding: '0 0.25em'
+    }
   },
 
   star: {
@@ -31,8 +40,8 @@ const styles = {
   },
 
   vince: {
-    webkitBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
-    mozBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
+    WebkitBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
+    MozBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
     boxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
     marginTop: '20px',
     borderRadius: '250px',
@@ -42,10 +51,10 @@ const styles = {
 
 }
 
-const NavBar = React.createClass({
+class NavBar extends Component {
   handleSelect(selectedKey) {
     alert('selected ' + selectedKey);
-  },
+  }
 
   render() {
     return (
@@ -66,7 +75,7 @@ const NavBar = React.createClass({
        </Navbar>
     );
   }
-});
+};
 
 
 class Header extends Component {
@@ -84,4 +93,5 @@ class Header extends Component {
   }
 }
 
+Header = Radium(Header)
 export { Header, NavBar }
