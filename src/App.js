@@ -31,16 +31,17 @@ const NavBar = React.createClass({
 });
 
 
-class Home extends Component {
+class Header extends Component {
   render() {
     return (
       <div className="Home">
         <img id="vince" src="vince.jpg" alt="Vince Roti"/>
         <h1 id="name"> Vince Roti </h1>
+        <hr class="star-light"/>
         <h4> Web Developer </h4>
       </div>
     );
   }
 }
 
-export { Home, NavBar }
+export { Header, NavBar }
