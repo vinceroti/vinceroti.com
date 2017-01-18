@@ -33,11 +33,25 @@ const NavBar = React.createClass({
 
 class Header extends Component {
   render() {
+    const headerStyle = {
+        textAlign: 'center',
+        color: 'white',
+      };
+
+    const hrStyle = {
+        padding: 0,
+        border: 'none',
+        borderTop: 'solid 5px',
+        textAlign: 'center',
+        maxWidth: '250px',
+        margin: '25px auto 30px',
+      };
+
     return (
-      <div className="Home">
+      <div style={headerStyle}>
         <img id="vince" src="vince.jpg" alt="Vince Roti"/>
         <h1 id="name"> Vince Roti </h1>
-        <hr class="star-light"/>
+        <hr style={hrStyle}/>
         <h4> Web Developer </h4>
       </div>
     );
