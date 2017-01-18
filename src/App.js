@@ -1,13 +1,60 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { Navbar, NavItem, Nav, Glyphicon } from 'react-bootstrap';
 import './styles/App.css';
-import './styles/freelancer.less';
+import Radium from 'radium';
 
 
-const NavBar = React.createClass({
+const styles = {
+
+  name: {
+    fontSize: '50px',
+    fontWeight: 'bold'
+  },
+
+  header: {
+    textAlign: 'center',
+    color: 'white',
+  },
+
+  hr: {
+    padding: 0,
+    border: 'none',
+    borderTop: 'solid 5px',
+    textAlign: 'center',
+    maxWidth: '250px',
+    margin: '25px auto 30px',
+    ':after': {
+      content: 'test',
+      display: 'inlineBlock',
+      position: 'relative',
+      top: '-0.8em',
+      fontSize: '2em',
+      padding: '0 0.25em'
+    }
+  },
+
+  star: {
+    display: 'inline-block',
+    position: 'relative',
+    fontSize: '50px',
+  },
+
+  vince: {
+    WebkitBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
+    MozBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
+    boxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
+    marginTop: '20px',
+    borderRadius: '250px',
+    width: '250px',
+    height: '250px',
+  }
+
+}
+
+class NavBar extends Component {
   handleSelect(selectedKey) {
     alert('selected ' + selectedKey);
-  },
+  }
 
   render() {
     return (
@@ -28,19 +75,23 @@ const NavBar = React.createClass({
        </Navbar>
     );
   }
-});
+};
 
 
-class Home extends Component {
+class Header extends Component {
   render() {
+
     return (
-      <div className="Home">
-        <img id="vince" src="vince.jpg" alt="Vince Roti"/>
-        <h1 id="name"> Vince Roti </h1>
+      <div style={styles.header}>
+        <img style={styles.vince} src="vince.jpg" alt="Vince Roti"/>
+        <h1 style={styles.name}> Vince Roti </h1>
+        <hr style={styles.hr}/>
+        <Glyphicon glyph="star" style={styles.star} />
         <h4> Web Developer </h4>
       </div>
     );
   }
 }
 
-export { Home, NavBar }
+Header = Radium(Header)
+export { Header, NavBar }
