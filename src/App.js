@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav, Glyphicon } from 'react-bootstrap';
 import './styles/App.css';
-import Radium from 'radium';
 
 
 const styles = {
+
+  title: {
+    paddingTop: '30px',
+    fontSize: '20px',
+  },
 
   name: {
     fontSize: '50px',
@@ -16,27 +20,26 @@ const styles = {
     color: 'white',
   },
 
-  hr: {
-    padding: 0,
+  line: {
+    padding: '0',
     border: 'none',
     borderTop: 'solid 5px',
     textAlign: 'center',
-    maxWidth: '250px',
-    margin: '25px auto 30px',
-    ':after': {
-      content: 'test',
-      display: 'inlineBlock',
-      position: 'relative',
-      top: '-0.8em',
-      fontSize: '2em',
-      padding: '0 0.25em'
-    }
+    width: '18%',
+    margin: 'auto',
+    backgroundColor: '#18BC9C',
+    color: 'white',
+    display: 'inline-block',
+
   },
 
   star: {
     display: 'inline-block',
     position: 'relative',
-    fontSize: '50px',
+    top: '11px',
+    fontSize: '2em',
+    padding: '0 0.25em',
+    borderColor: 'white',
   },
 
   vince: {
@@ -85,13 +88,13 @@ class Header extends Component {
       <div style={styles.header}>
         <img style={styles.vince} src="vince.jpg" alt="Vince Roti"/>
         <h1 style={styles.name}> Vince Roti </h1>
-        <hr style={styles.hr}/>
-        <Glyphicon glyph="star" style={styles.star} />
-        <h4> Web Developer </h4>
+        <hr style={styles.line}/>
+          <Glyphicon glyph="star" style={styles.star} />
+        <hr style={styles.line} />
+        <h4 style={styles.title}> Web Developer </h4>
       </div>
     );
   }
 }
 
-Header = Radium(Header)
 export { Header, NavBar }
