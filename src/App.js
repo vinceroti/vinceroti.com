@@ -7,6 +7,7 @@ const styles = {
 
   title: {
     paddingTop: '30px',
+    fontSize: '20px',
   },
 
   name: {
@@ -24,11 +25,12 @@ const styles = {
     border: 'none',
     borderTop: 'solid 5px',
     textAlign: 'center',
-    width: '200px',
+    width: '18%',
     margin: 'auto',
     backgroundColor: '#18BC9C',
     color: 'white',
     display: 'inline-block',
+
   },
 
   star: {
