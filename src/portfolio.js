@@ -3,21 +3,13 @@ import { Glyphicon } from 'react-bootstrap';
 
 
 const styles = {
-
-  title: {
-    paddingTop: '30px',
-    fontSize: '20px',
-  },
-
-  name: {
-    fontSize: '50px',
-    fontWeight: 'bold'
-  },
-
-  header: {
-    textAlign: 'center',
+  portfolio: {
+    backgroundColor: 'gray',
     color: 'white',
-    paddingBottom: '200px'
+    margin: 'auto',
+    textAlign: 'center',
+    paddingTop: '50px',
+    paddingBottom: '50px'
   },
 
   line: {
@@ -44,34 +36,30 @@ const styles = {
     borderColor: 'white',
   },
 
-  vince: {
-    WebkitBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
-    MozBoxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
-    boxShadow: '0px 0px 32px 0px rgba(0,0,0,0.75)',
-    marginTop: '20px',
-    borderRadius: '250px',
-    width: '250px',
-    height: '250px',
+  title: {
+    fontWeight: 'bold',
+    fontSize: '40px',
+    letterSpacing: '2.5px'
   }
-
 }
 
 
 
-class Header extends Component {
+class Portfolio extends Component {
   render() {
 
     return (
-      <div style={styles.header}>
-        <img style={styles.vince} src="vince.jpg" alt="Vince Roti"/>
-        <h1 style={styles.name}> Vince Roti </h1>
+      <div style={styles.portfolio} id="portfolio">
+        <h2 style={styles.title}> PORTFOLIO </h2>
         <hr style={styles.line}/>
           <Glyphicon glyph="star" style={styles.star} />
         <hr style={styles.line} />
-        <h4 style={styles.title}> Web Developer </h4>
+        <div>
+
+        </div>
       </div>
     );
   }
 }
 
-export { Header };
+export { Portfolio };
