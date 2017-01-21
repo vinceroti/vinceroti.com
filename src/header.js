@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav, Glyphicon } from 'react-bootstrap';
-import './styles/App.css';
+import { Glyphicon } from 'react-bootstrap';
 
 
 const styles = {
@@ -16,8 +15,10 @@ const styles = {
   },
 
   header: {
+    marginTop: '100px',
     textAlign: 'center',
     color: 'white',
+    paddingBottom: '200px'
   },
 
   line: {
@@ -25,11 +26,13 @@ const styles = {
     border: 'none',
     borderTop: 'solid 5px',
     textAlign: 'center',
-    width: '18%',
+    width: '100px',
+    maxWidth: '20%',
     margin: 'auto',
     backgroundColor: '#18BC9C',
     color: 'white',
     display: 'inline-block',
+    borderRadius: '250px'
 
   },
 
@@ -54,31 +57,6 @@ const styles = {
 
 }
 
-class NavBar extends Component {
-  handleSelect(selectedKey) {
-    alert('selected ' + selectedKey);
-  }
-
-  render() {
-    return (
-     <Navbar inverse>
-         <Navbar.Header>
-           <Navbar.Brand>
-             <a href="#">Vince Roti</a>
-           </Navbar.Brand>
-           <Navbar.Toggle />
-         </Navbar.Header>
-         <Navbar.Collapse>
-           <Nav pullRight>
-             <NavItem eventKey={1} href="#">Portfolio</NavItem>
-             <NavItem eventKey={2} href="#">About</NavItem>
-             <NavItem eventKey={3} target="_blank" href="VinceRoti.pdf">Resume</NavItem>
-           </Nav>
-         </Navbar.Collapse>
-       </Navbar>
-    );
-  }
-};
 
 
 class Header extends Component {
@@ -97,4 +75,4 @@ class Header extends Component {
   }
 }
 
-export { Header, NavBar }
+export { Header };
