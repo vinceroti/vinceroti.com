@@ -8,8 +8,7 @@ const styles = {
     color: 'white',
     margin: 'auto',
     textAlign: 'center',
-    paddingTop: '50px',
-    paddingBottom: '50px'
+    paddingTop: '50px'
   },
 
   line: {
@@ -23,7 +22,7 @@ const styles = {
     backgroundColor: '#18BC9C',
     color: 'white',
     display: 'inline-block',
-    borderRadius: '250px'
+    borderRadius: '250px',
 
   },
 
@@ -40,6 +39,17 @@ const styles = {
     fontWeight: 'bold',
     fontSize: '40px',
     letterSpacing: '2.5px'
+  },
+
+  ul: {
+    listStyleType: 'none'
+  },
+
+  image: {
+    display: 'inline-block',
+    marginTop: '30px',
+    height: '30%',
+    width: '30%',
   }
 }
 
@@ -55,7 +65,10 @@ class Portfolio extends Component {
           <Glyphicon glyph="star" style={styles.star} />
         <hr style={styles.line} />
         <div>
-
+          <ul style={styles.ul}>
+            <li><img style={styles.image} src="wiki.png" alt="Wikipedia Logo" /></li>
+            <li><img style={styles.image} src="google.png" alt="Google Logo" /></li>
+            </ul>
         </div>
       </div>
     );
