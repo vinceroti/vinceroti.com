@@ -15,6 +15,7 @@ const styles = {
   },
 
   header: {
+    marginTop: '100px',
     textAlign: 'center',
     color: 'white',
     paddingBottom: '200px'

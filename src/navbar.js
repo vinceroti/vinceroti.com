@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
+const style = {
+  zIndex: '99',
+  top: '0px',
+  position: 'fixed',
+  width: '100%',
+  overFlow: 'hidden'
+}
+
 class NavBar extends Component {
 
 
@@ -10,7 +18,7 @@ class NavBar extends Component {
 
   render() {
     return (
-     <Navbar inverse>
+     <Navbar inverse style={style}>
          <Navbar.Header>
            <Navbar.Brand>
              <a href="#">Vince Roti</a>
