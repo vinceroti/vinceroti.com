@@ -42,14 +42,16 @@ const styles = {
   },
 
   ul: {
+    paddingLeft: '0',
     listStyleType: 'none'
   },
 
   image: {
     display: 'inline-block',
-    marginTop: '30px',
-    height: '30%',
-    width: '30%',
+    margin: 'auto',
+    marginTop: '20px',
+    width: '300px',
+    maxWidth: '90%',
   }
 }
 
@@ -66,8 +68,8 @@ class Portfolio extends Component {
         <hr style={styles.line} />
         <div>
           <ul style={styles.ul}>
-            <li><img style={styles.image} src="wiki.png" alt="Wikipedia Logo" /></li>
-            <li><img style={styles.image} src="google.png" alt="Google Logo" /></li>
+            <li style={styles.image}><img style={styles.image} src="wiki.png" alt="Wikipedia Logo" /></li>
+            <li style={styles.image}><img style={styles.image} src="google.png" alt="Google Logo" /></li>
             </ul>
         </div>
       </div>
