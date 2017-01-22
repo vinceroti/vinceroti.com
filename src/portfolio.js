@@ -1,3 +1,4 @@
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
 
@@ -58,10 +59,24 @@ const styles = {
 
 
 class Portfolio extends Component {
+
+  handleMouseOver(){
+    return console.log("test")
+  }
+
   render() {
 
     return (
+
       <div style={styles.portfolio} id="portfolio">
+      <ReactCSSTransitionGroup
+         transitionName="example"
+         transitionAppear={true}
+         transitionAppearTimeout={4000}
+         transitionEnter={false}
+         transitionLeave={false}>
+         <h1>Fading at Initial Mount</h1>
+       </ReactCSSTransitionGroup>
         <h2 style={styles.title}> PORTFOLIO </h2>
         <hr style={styles.line}/>
           <Glyphicon glyph="star" style={styles.star} />
@@ -69,7 +84,7 @@ class Portfolio extends Component {
         <div>
           <ul style={styles.ul}>
             <li style={styles.image}><img style={styles.image} src="wiki.png" alt="Wikipedia Logo" /></li>
-            <li style={styles.image}><img style={styles.image} src="google.png" alt="Google Logo" /></li>
+            <li style={styles.image}><img onMouseOver={this.handleMouseOver} style={styles.image} src="google.png" alt="Google Logo" /></li>
             </ul>
         </div>
       </div>
