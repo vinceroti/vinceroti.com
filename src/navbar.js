@@ -6,7 +6,8 @@ const style = {
   top: '0px',
   position: 'fixed',
   width: '100%',
-  overFlow: 'hidden'
+  overFlow: 'hidden',
+  border: 'rgba(8, 8, 8, 0)'
 }
 
 class NavBar extends Component {

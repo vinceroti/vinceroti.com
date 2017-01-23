@@ -67,16 +67,7 @@ class Portfolio extends Component {
   render() {
 
     return (
-
       <div style={styles.portfolio} id="portfolio">
-      <ReactCSSTransitionGroup
-         transitionName="example"
-         transitionAppear={true}
-         transitionAppearTimeout={4000}
-         transitionEnter={false}
-         transitionLeave={false}>
-         <h1>Fading at Initial Mount</h1>
-       </ReactCSSTransitionGroup>
         <h2 style={styles.title}> PORTFOLIO </h2>
         <hr style={styles.line}/>
           <Glyphicon glyph="star" style={styles.star} />
