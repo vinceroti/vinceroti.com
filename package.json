@@ -11,7 +11,7 @@
     "react-addons-css-transition-group": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.1",
-    "react-fontawesome": "^1.5.0"
+    "reactcss": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
