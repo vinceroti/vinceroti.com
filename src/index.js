@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/header';
 import NavBar from './components/navbar';
-import Portfolio from './components/portfolio';
+import Main from './components/main';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import './styles/index.css';
 
 ReactDOM.render(
   <div>
-    <NavBar />
-    <Header />
-    <Portfolio/>
+    <ReactCSSTransitionGroup
+      transitionName="navbar"
+      transitionAppear={true}
+      transitionAppearTimeout={500}
+      transitionEnter={false}
+      transitionLeave={false}>
+      <NavBar />
+    </ReactCSSTransitionGroup>
+    <Main wait={500}/>
   </div>,
   document.getElementById('root')
 );
