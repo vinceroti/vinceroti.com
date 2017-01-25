@@ -8,16 +8,27 @@ class HoverImage extends Component {
     const styles = reactCSS({
       default: {
         image: {
+          paddingLeft: '20px',
+          paddingRight: '20px',
           display: 'inline-block',
           margin: 'auto',
           marginTop: '20px',
-          width: '250px',
+          width: '240px',
           maxWidth: '90%',
+          verticalAlign: 'middle',
+          WebkitTransform: 'perspective(1px) translateZ(0)',
+          transform: 'perspective(1px) translateZ(0)',
+          boxShadow: '0 0 1px transparent',
+          WebkitTransitionDuration: '0.3s',
+          transitionDuration: '0.3s',
+          WebkitTransitionProperty: 'transform',
+          transitionProperty: 'transform'
         }
       },
       hover: {
         image: {
-          backgroundColor: 'red'
+          WebkitTransform: 'scale(1.1)',
+          transform: 'scale(1.1)'
         }
       }
     }, this.props)
