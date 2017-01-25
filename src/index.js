@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './header';
-import { NavBar } from './navbar';
-import { Portfolio } from './portfolio';
+import Header from './header';
+import NavBar from './navbar';
+import Portfolio from './portfolio';
 
 import './styles/index.css';
 
