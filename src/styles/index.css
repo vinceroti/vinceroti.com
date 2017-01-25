@@ -5,11 +5,20 @@ body {
   background-image: url("../images/office.png");
 }
 
-.example-appear {
+.navbar-appear {
   opacity: 0.01;
 }
 
-.example-appear.example-appear-active {
+.navbar-appear.navbar-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.dom-appear {
+  opacity: 0.01;
+}
+
+.dom-appear.dom-appear-active {
   opacity: 1;
   transition: opacity .7s ease-in;
 }
