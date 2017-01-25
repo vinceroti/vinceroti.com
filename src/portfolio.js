@@ -2,69 +2,68 @@ import reactCSS, { hover } from 'reactcss';
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
 
-const styles = reactCSS({
-  'default': {
-    portfolio: {
-      backgroundColor: 'gray',
-      color: 'white',
-      margin: 'auto',
-      textAlign: 'center',
-      paddingTop: '50px'
-    },
-
-    line: {
-      padding: '0',
-      border: 'none',
-      borderTop: 'solid 5px',
-      textAlign: 'center',
-      width: '100px',
-      maxWidth: '20%',
-      margin: 'auto',
-      backgroundColor: '#18BC9C',
-      color: 'white',
-      display: 'inline-block',
-      borderRadius: '250px',
-
-    },
-
-    star: {
-      display: 'inline-block',
-      position: 'relative',
-      top: '11px',
-      fontSize: '2em',
-      padding: '0 0.25em',
-      borderColor: 'white',
-    },
-
-    title: {
-      fontWeight: 'bold',
-      fontSize: '40px',
-      letterSpacing: '2.5px'
-    },
-
-    ul: {
-      paddingLeft: '0',
-      listStyleType: 'none'
-    },
-    image: {
-      display: 'inline-block',
-      margin: 'auto',
-      marginTop: '20px',
-      width: '250px',
-      maxWidth: '90%',
-    },
-  },
-  'hover': {
-    image: {
-      backgroundColor: "red"
-    }
-  }
-})
-
-
 class Portfolio extends Component {
 
   render() {
+    const styles = reactCSS({
+      'default': {
+        portfolio: {
+          backgroundColor: 'gray',
+          color: 'white',
+          margin: 'auto',
+          textAlign: 'center',
+          paddingTop: '50px'
+        },
+
+        line: {
+          padding: '0',
+          border: 'none',
+          borderTop: 'solid 5px',
+          textAlign: 'center',
+          width: '100px',
+          maxWidth: '20%',
+          margin: 'auto',
+          backgroundColor: '#18BC9C',
+          color: 'white',
+          display: 'inline-block',
+          borderRadius: '250px',
+
+        },
+
+        star: {
+          display: 'inline-block',
+          position: 'relative',
+          top: '11px',
+          fontSize: '2em',
+          padding: '0 0.25em',
+          borderColor: 'white',
+        },
+
+        title: {
+          fontWeight: 'bold',
+          fontSize: '40px',
+          letterSpacing: '2.5px'
+        },
+
+        ul: {
+          paddingLeft: '0',
+          listStyleType: 'none'
+        },
+        image: {
+          display: 'inline-block',
+          margin: 'auto',
+          marginTop: '20px',
+          width: '250px',
+          maxWidth: '90%',
+        },
+      },
+      'hover': {
+        image: {
+          backgroundColor: "red"
+        }
+      }
+    }, this.props)
+
     return (
       <div style={styles.portfolio} id="portfolio">
         <h2 style={styles.title}> PORTFOLIO </h2>
