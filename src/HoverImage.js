@@ -13,7 +13,7 @@ class HoverImage extends Component {
           display: 'inline-block',
           margin: 'auto',
           marginTop: '20px',
-          width: '240px',
+          width: '250px',
           maxWidth: '90%',
           verticalAlign: 'middle',
           WebkitTransform: 'perspective(1px) translateZ(0)',
