@@ -2,9 +2,8 @@ import reactCSS, { hover } from 'reactcss';
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
 
-
 const styles = reactCSS({
-  default: {
+  'default': {
     portfolio: {
       backgroundColor: 'gray',
       color: 'white',
@@ -51,23 +50,21 @@ const styles = reactCSS({
       display: 'inline-block',
       margin: 'auto',
       marginTop: '20px',
-      width: '300px',
+      width: '250px',
       maxWidth: '90%',
     },
-    hover: {
-      image: {
-        transform: 'scale(1.1)',
-      },
-    },
+  },
+  'hover': {
+    image: {
+      backgroundColor: "red"
+    }
   }
 })
-
 
 
 class Portfolio extends Component {
 
   render() {
-
     return (
       <div style={styles.portfolio} id="portfolio">
         <h2 style={styles.title}> PORTFOLIO </h2>
@@ -89,5 +86,4 @@ class Portfolio extends Component {
 
 
 
-Portfolio = hover(Portfolio)
-export { Portfolio };
+export default hover(Portfolio)
