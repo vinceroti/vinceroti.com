@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
-import HoverImage from './HoverImage';
+import HoverImage from './hoverImage';
 
 const styles = {
   portfolio: {

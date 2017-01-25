@@ -64,7 +64,7 @@ class Header extends Component {
 
     return (
       <div style={styles.header}>
-        <img style={styles.vince} src="vince.jpg" alt="Vince Roti"/>
+        <img style={styles.vince} src="images/vince.jpg" alt="Vince Roti"/>
         <h1 style={styles.name}> Vince Roti </h1>
         <hr style={styles.line}/>
           <Glyphicon glyph="star" style={styles.star} />
