@@ -10,8 +10,7 @@ ReactDOM.render(
   <div>
     <NavBar />
     <Header />
-    <Portfolio />
+    <Portfolio/>
   </div>,
   document.getElementById('root')
 );
-
