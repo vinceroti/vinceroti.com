@@ -4,3 +4,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   background-image: url("../images/office.png");
 }
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .7s ease-in;
+}
