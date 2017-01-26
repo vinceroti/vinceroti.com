@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Glyphicon } from 'react-bootstrap';
+import HoverStar from './hoverstar';
 
 const styles = {
   about: {
-    backgroundColor: 'gray',
     color: 'white',
     margin: 'auto',
     textAlign: 'center',
-    paddingTop: '50px',
-    paddingBottom: '50px'
+    paddingTop: '30px',
+    paddingBottom: '30px'
   },
 
   line: {
@@ -49,7 +48,7 @@ class About extends Component {
       <div style={styles.about} id="about">
         <h2 style={styles.title}> ABOUT </h2>
         <hr style={styles.line}/>
-        <Glyphicon glyph="star" style={styles.star} />
+        <HoverStar />
         <hr style={styles.line} />
       </div>
     );
