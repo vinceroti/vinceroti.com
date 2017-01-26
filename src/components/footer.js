@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 const styles = {
   footer: {
-    backgroundColor: 'white',
     width:'100%',
     height:'30px',
     position: 'absolute'
@@ -10,7 +9,8 @@ const styles = {
   p: {
     fontSize: '12px',
     textAlign: 'center',
-    paddingTop: '6px'
+    paddingTop: '6px',
+    color: 'white'
   }
 }
 
