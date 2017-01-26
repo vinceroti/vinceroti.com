@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Glyphicon } from 'react-bootstrap';
+import HoverStar from './hoverstar';
 import HoverImage from './hoverImage';
 
 const styles = {
@@ -49,7 +49,7 @@ class Portfolio extends Component {
       <div style={styles.portfolio} id="portfolio">
         <h2 style={styles.title}> PORTFOLIO </h2>
         <hr style={styles.line}/>
-        <Glyphicon glyph="star" style={styles.star} />
+        <HoverStar />
         <hr style={styles.line} />
         <div>
           <a href="https://github.com/kangkg/dbc-wikipedia-clone">

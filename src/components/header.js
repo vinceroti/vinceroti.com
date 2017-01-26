@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Glyphicon } from 'react-bootstrap';
+import HoverStar from './hoverstar';
 
 
 const styles = {
@@ -67,7 +67,7 @@ class Header extends Component {
         <img style={styles.vince} src="images/vince.jpg" alt="Vince Roti"/>
         <h1 style={styles.name}> Vince Roti </h1>
         <hr style={styles.line}/>
-          <Glyphicon glyph="star" style={styles.star} />
+          <HoverStar/>
         <hr style={styles.line} />
         <h4 style={styles.title}> Web Developer </h4>
       </div>

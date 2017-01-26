@@ -5,12 +5,6 @@ import About from './about';
 import Footer from './footer'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-const styles = {
-  footer: {
-    top: '40px'
-  }
-}
-
 class Main extends Component {
   constructor(props) {
     super(props);
