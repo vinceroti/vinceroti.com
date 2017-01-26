@@ -41,7 +41,7 @@ const styles = {
     letterSpacing: '2.5px'
   },
   paragraph:{
-    fontSize: '16',
+    fontSize: '16px',
     margin: '30px 60px 30px 60px'
   }
 }
