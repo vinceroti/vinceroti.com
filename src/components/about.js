@@ -3,6 +3,7 @@ import HoverStar from './hoverstar';
 
 const styles = {
   about: {
+    backgroundColor: 'rgba(245, 245, 245, 0.03)',
     color: 'white',
     margin: 'auto',
     textAlign: 'center',
@@ -39,6 +40,10 @@ const styles = {
     fontSize: '40px',
     letterSpacing: '2.5px'
   },
+  paragraph:{
+    fontSize: '16',
+    margin: '30px 60px 30px 60px'
+  }
 }
 
 class About extends Component {
@@ -50,6 +55,11 @@ class About extends Component {
         <hr style={styles.line}/>
         <HoverStar />
         <hr style={styles.line} />
+        <div style={styles.paragraph}>
+          <p>
+          I'm a recent graduate from Dev Bootcamp which is a 19 week intensive Full Stack web development training program and am now looking for a new opportunities in the web development field, weather that be front-end or full stack development.
+          </p>
+        </div>
       </div>
     );
   }
