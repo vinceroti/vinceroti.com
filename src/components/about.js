@@ -3,12 +3,11 @@ import HoverStar from './hoverstar';
 
 const styles = {
   about: {
-    backgroundColor: 'gray',
     color: 'white',
     margin: 'auto',
     textAlign: 'center',
-    paddingTop: '50px',
-    paddingBottom: '50px'
+    paddingTop: '30px',
+    paddingBottom: '30px'
   },
 
   line: {
