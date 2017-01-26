@@ -52,8 +52,12 @@ class Portfolio extends Component {
         <Glyphicon glyph="star" style={styles.star} />
         <hr style={styles.line} />
         <div>
-          <HoverImage src="images/wiki.png" alt="Wikipedia Logo"/>
-          <HoverImage src="images/google.png" alt="Google Maps Logo"/>
+          <a href="https://github.com/kangkg/dbc-wikipedia-clone">
+            <HoverImage src="images/wiki.png" alt="Wikipedia Logo"/>
+          </a>
+          <a href="https://github.com/TrRo26/remind_rails">
+            <HoverImage src="images/google.png" alt="Google Maps Logo"/>
+          </a>
         </div>
       </div>
     );
