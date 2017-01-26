@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HoverStar from './hoverstar';
+import { SocialIcon } from 'react-social-icons';
 
 
 const styles = {
@@ -53,6 +54,12 @@ const styles = {
     borderRadius: '250px',
     width: '250px',
     height: '250px',
+  },
+  icon: {
+    marginTop: '30px',
+    marginLeft: '10px',
+    marginRight: '10px',
+    borderRadius: '0px',
   }
 
 }
@@ -70,6 +77,10 @@ class Header extends Component {
           <HoverStar/>
         <hr style={styles.line} />
         <h4 style={styles.title}> Web Developer </h4>
+        <div  >
+          <SocialIcon style={styles.icon} url="http://linkedin.com/in/vinceroti" />
+          <SocialIcon style={styles.icon} url="https://github.com/vinceroti" color="white"/>
+        </div>
       </div>
     );
   }
