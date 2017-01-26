@@ -4,7 +4,6 @@ import HoverImage from './hoverImage';
 
 const styles = {
   portfolio: {
-    backgroundColor: 'rgba(245, 245, 245, 0.03)',
     color: 'white',
     margin: 'auto',
     textAlign: 'center',

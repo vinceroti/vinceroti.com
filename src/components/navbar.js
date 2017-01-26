@@ -23,8 +23,8 @@ class NavBar extends Component {
          </Navbar.Header>
          <Navbar.Collapse>
            <Nav pullRight>
-             <NavItem href="#portfolio">Portfolio</NavItem>
              <NavItem href="#about">About</NavItem>
+             <NavItem href="#portfolio">Portfolio</NavItem>
              <NavItem target="_blank" href="VinceRoti.pdf">Resume</NavItem>
            </Nav>
          </Navbar.Collapse>

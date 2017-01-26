@@ -27,8 +27,8 @@ class Main extends Component {
           transitionEnter={false}
           transitionLeave={false}>
           <Header/>
-          <Portfolio/>
           <About />
+          <Portfolio/>
           <Footer />
         </ReactCSSTransitionGroup>
       })
