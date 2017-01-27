@@ -16,7 +16,7 @@ ReactDOM.render(
       transitionLeave={false}>
       <NavBar />
     </ReactCSSTransitionGroup>
-    <Main wait={500}/>
+    <Main wait={500}/>z
   </div>,
   document.getElementById('root')
 );
