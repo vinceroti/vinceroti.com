@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import smoothScroll from 'smooth-scroll';
 
 const style = {
   zIndex: '99',
@@ -11,20 +12,22 @@ const style = {
 }
 
 class NavBar extends Component {
-
   render() {
+    smoothScroll.init();
+    const scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}'
+
     return (
      <Navbar inverse style={style}>
          <Navbar.Header>
            <Navbar.Brand>
-             <a href="#">Vince Roti</a>
+             <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
            </Navbar.Brand>
            <Navbar.Toggle />
          </Navbar.Header>
          <Navbar.Collapse>
            <Nav pullRight>
-             <NavItem href="#about">About</NavItem>
-             <NavItem href="#portfolio">Portfolio</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} href="#about">About</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} href="#portfolio">Portfolio</NavItem>
              <NavItem target="_blank" href="VinceRoti.pdf">Resume</NavItem>
            </Nav>
          </Navbar.Collapse>

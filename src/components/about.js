@@ -41,8 +41,12 @@ const styles = {
     letterSpacing: '2.5px'
   },
   paragraph:{
-    fontSize: '16px',
-    margin: '30px 60px 30px 60px'
+    paddingTop: '40px',
+    paddingBottom: '25px',
+    margin: 'auto',
+    width: '70%',
+    minWidth: '250px',
+    fontSize: '22px',
   }
 }
 
