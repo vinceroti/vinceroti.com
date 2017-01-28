@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HoverStar from './hoverstar';
 import HoverImage from './hoverImage';
 import SectionHeader from './section-header';
 
