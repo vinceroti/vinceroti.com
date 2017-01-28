@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import HoverStar from './hoverstar';
 import HoverImage from './hoverImage';
+import SectionHeader from './section-header';
 
 const styles = {
   portfolio: {
@@ -8,37 +8,7 @@ const styles = {
     margin: 'auto',
     textAlign: 'center',
     paddingTop: '30px',
-    paddingBottom: '40px'
-  },
-
-  line: {
-    padding: '0',
-    border: 'none',
-    borderTop: 'solid 5px',
-    textAlign: 'center',
-    width: '100px',
-    maxWidth: '20%',
-    margin: 'auto',
-    backgroundColor: '#18BC9C',
-    color: 'white',
-    display: 'inline-block',
-    borderRadius: '250px',
-
-  },
-
-  star: {
-    display: 'inline-block',
-    position: 'relative',
-    top: '11px',
-    fontSize: '2em',
-    padding: '0 0.25em',
-    borderColor: 'white',
-  },
-
-  title: {
-    fontWeight: 'bold',
-    fontSize: '40px',
-    letterSpacing: '2.5px'
+    paddingBottom: '30px'
   },
 }
 
@@ -47,10 +17,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div style={styles.portfolio} id="portfolio">
-        <h2 style={styles.title}> PORTFOLIO </h2>
-        <hr style={styles.line}/>
-        <HoverStar />
-        <hr style={styles.line} />
+        <SectionHeader section="portfolio"/>
         <div>
           <a href="https://github.com/kangkg/dbc-wikipedia-clone">
             <HoverImage src="images/wiki.png" alt="Wikipedia Logo"/>
