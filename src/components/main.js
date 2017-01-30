@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './header';
-import Portfolio from './portfolio';
 import About from './about';
+import Skills from './skills';
+import Portfolio from './portfolio';
 import Footer from './footer'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -28,6 +29,7 @@ class Main extends Component {
           transitionLeave={false}>
           <Header/>
           <About />
+          <Skills />
           <Portfolio/>
           <Footer />
         </ReactCSSTransitionGroup>

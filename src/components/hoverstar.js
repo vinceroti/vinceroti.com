@@ -11,6 +11,7 @@ class HoverStar extends Component {
 
       default: {
         star: {
+          color: 'white',
           display: 'inline-block',
           position: 'relative',
           top: '11px',

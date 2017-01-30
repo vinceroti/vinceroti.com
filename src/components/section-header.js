@@ -20,16 +20,8 @@ class SectionHeader extends Component {
 
       },
 
-      star: {
-        display: 'inline-block',
-        position: 'relative',
-        top: '11px',
-        fontSize: '2em',
-        padding: '0 0.25em',
-        borderColor: 'white',
-      },
-
       title: {
+        color: 'white',
         fontWeight: 'bold',
         fontSize: '40px',
         letterSpacing: '2.5px'
