@@ -22,3 +22,8 @@ body {
   opacity: 1;
   transition: opacity .7s ease-in;
 }
+
+
+.collapsed {
+  font-size: 30px;
+}
