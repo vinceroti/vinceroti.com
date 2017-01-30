@@ -14,6 +14,7 @@ const styles = {
     paddingTop: '40px',
     paddingLeft: '25px',
     paddingRight: '25px',
+    marginBottom: '9px',
     width: '35%',
     minWidth: '300px',
   },
@@ -29,7 +30,7 @@ class Skills extends Component {
     return (
       <div style={styles.skills} id="skills">
         <SectionHeader section="skills"/>
-        <Accordion id="1" style={styles.accordion}>
+        <Accordion  style={styles.accordion}>
           <Panel header="Ruby" eventKey="1">
           </Panel>
           <Panel header="HTML5" eventKey="3">
@@ -49,7 +50,7 @@ class Skills extends Component {
           <Panel header="OSX" eventKey="17">
           </Panel>
         </Accordion>
-        <Accordion id="2" style={{...styles.accordion, ...styles.align}}>
+        <Accordion  style={{...styles.accordion, ...styles.align}}>
           <Panel header="Rails" eventKey="2">
           </Panel>
           <Panel header="CSS" eventKey="4">
