@@ -15,7 +15,7 @@ const styles = {
     paddingLeft: '25px',
     paddingRight: '25px',
     marginBottom: '9px',
-    width: '35%',
+    width: '300px',
     minWidth: '300px',
   },
   align: {
