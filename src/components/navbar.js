@@ -43,7 +43,9 @@ class NavBar extends Component {
          <Navbar.Collapse>
            <Nav pullRight>
              <NavItem data-scroll data-options={scrollOptions} href="#about">About</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} href="#skills">Skills</NavItem>
              <NavItem data-scroll data-options={scrollOptions} href="#portfolio">Portfolio</NavItem>
+
              <NavItem target="_blank" href="VinceRoti.pdf">Resume</NavItem>
            </Nav>
          </Navbar.Collapse>
