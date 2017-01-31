@@ -8,44 +8,43 @@ const styles = {
     textAlign: 'center',
     paddingTop: '30px',
     paddingBottom: '30px',
-    borderRadius: '0px'
+    borderRadius: '0px',
   },
   accordion: {
     display: 'inline-block',
     paddingLeft: '25px',
     paddingRight: '25px',
-    width: '430px',
-    minWidth: '270px',
-    fontSize: '24px',
-
+    width: '300px',
+    fontSize: '16px',
+    marginBottom: '0px'
   },
   align: {
     position: 'relative',
-    top: '-59.5px'
+    top: '-48.5px',
+    marginTop: '40px',
   },
   marginTop: {
-    marginTop: '43px'
+    marginTop: '14px'
   },
   marginBottom: {
     marginBottom: '64.5px'
   },
   nestedDiv: {
-    marginTop: '30px',
+    paddingTop: '40px'
   }
 }
 
 class Skills extends Component {
-
   render() {
     return (
       <div style={styles.skills} id="skills">
         <SectionHeader styles={styles.section} section="skills"/>
         <div style={styles.nestedDiv}>
-          <Accordion  style={{...styles.accordion,...styles.marginBottom}}>
-            <Panel header="Ruby" eventKey="1">
+          <Accordion  style={styles.accordion}>
+            <Panel header="Ruby" eventKey="1" style={styles.marginTop} >
             My first programming language that was introduced to me at Dev Bootcamp. Very user friendly and due to extensive documentation and built-in functions, I can solve technical problems with ease. It is by far my strongest language.
             </Panel>
-            <Panel header="HTML5" eventKey="3">
+            <Panel header="HTML5" href="#" eventKey="3">
             HyperText Markup Language, the core of Web Development.
             </Panel>
             <Panel header="JavaScript" eventKey="5">
@@ -71,7 +70,7 @@ class Skills extends Component {
             </Panel>
           </Accordion>
           <Accordion  style={{...styles.accordion, ...styles.align}}>
-            <Panel style={styles.margin} header="Rails" eventKey="2">
+            <Panel style={styles.marginTop} header="Rails" eventKey="2">
             Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby. Rails is a MVC framework, providing default structures for a database, a web service, and web pages. One of the last three weeks at Dev Bootcamp consisted of developing and testing in the Rails framework.
             </Panel>
             <Panel header="CSS" eventKey="4">
@@ -86,7 +85,7 @@ class Skills extends Component {
             <Panel header="Google Maps API" eventKey="10">
             One of the projects I built at Dev Bootcamp was an iOS app, during the project I focused on the backend which was connected to the Google Maps API. I would ping google maps with keywords and send a reformated JSON object back to the front end.
             </Panel>
-            <Panel header="Test Driven Development" eventKey="12">
+            <Panel header="Test Driven Development"  className="tdd" eventKey="12">
             Test-driven development is a development technique where you must first write a test that fails before you write new functional code. It was one of the core fondations at Dev Bootcamp.
             </Panel>
             <Panel header="Jasmine" eventKey="14">
