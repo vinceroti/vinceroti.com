@@ -12,9 +12,9 @@ const styles = {
   },
   accordion: {
     display: 'inline-block',
-    paddingLeft: '25px',
-    paddingRight: '25px',
-    width: '300px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
+    width: '265px',
     fontSize: '16px',
     marginBottom: '0px'
   },
@@ -86,7 +86,7 @@ class Skills extends Component {
             One of the projects I built at Dev Bootcamp was an iOS app, during the project I focused on the backend which was connected to the Google Maps API. I would ping google maps with keywords and send a reformated JSON object back to the front end.
             </Panel>
             <Panel header="Test Driven Development"  className="tdd" eventKey="12">
-            Test-driven development is a development technique where you must first write a test that fails before you write new functional code. It was one of the core fondations at Dev Bootcamp.
+            Test-driven development is a development technique where you must first write a test that fails before you write new functional code. It was one of the core foundations at Dev Bootcamp.
             </Panel>
             <Panel header="Jasmine" eventKey="14">
             Jasmine is the testing suite for JavaScript. For every JavaScript app that was built at Dev Bootcamp, tests where always made as well.
