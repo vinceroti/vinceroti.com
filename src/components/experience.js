@@ -14,9 +14,10 @@ const styles = {
   },
   paragraph:{
     display: 'inline-block',
+    verticalAlign: 'right',
+    margin: '30px',
     fontSize: '22px',
     paddingBottom: '25px',
-    margin: 'auto',
     width: '70%',
     minWidth: '250px',
   },
