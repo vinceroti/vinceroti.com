@@ -16,18 +16,11 @@ const styles = {
     paddingRight: '10px',
     width: '265px',
     fontSize: '16px',
-    marginBottom: '0px'
-  },
-  align: {
-    position: 'relative',
-    top: '-49px',
-    marginTop: '40px',
+    marginBottom: '0px',
+    verticalAlign: 'top'
   },
   marginTop: {
-    marginTop: '14px'
-  },
-  marginBottom: {
-    marginBottom: '64.5px'
+    marginTop: '6px'
   },
   nestedDiv: {
     paddingTop: '40px'
@@ -69,7 +62,7 @@ class Skills extends Component {
             I am very familar with the Mac OS and am comfortable being put into a Mac environment.
             </Panel>
           </Accordion>
-          <Accordion  style={{...styles.accordion, ...styles.align}}>
+          <Accordion  style={styles.accordion}>
             <Panel style={styles.marginTop} header="Rails" eventKey="2">
             Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby. Rails is a MVC framework, providing default structures for a database, a web service, and web pages. One of the last three weeks at Dev Bootcamp consisted of developing and testing in the Rails framework.
             </Panel>
