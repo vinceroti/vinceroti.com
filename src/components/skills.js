@@ -4,11 +4,11 @@ import { Panel, Accordion } from 'react-bootstrap';
 
 const styles = {
   skills: {
+    backgroundColor: 'rgba(245, 245, 245, 0.03)',
     margin: 'auto',
     textAlign: 'center',
     paddingTop: '30px',
     paddingBottom: '30px',
-    borderRadius: '0px',
   },
   accordion: {
     display: 'inline-block',
