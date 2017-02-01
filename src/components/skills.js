@@ -20,7 +20,7 @@ const styles = {
   },
   align: {
     position: 'relative',
-    top: '-48.5px',
+    top: '-49px',
     marginTop: '40px',
   },
   marginTop: {
