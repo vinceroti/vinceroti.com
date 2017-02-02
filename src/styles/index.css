@@ -23,17 +23,14 @@ body {
   transition: opacity .7s ease-in;
 }
 
-
-.collapsed {
-  font-size: 20px;
-}
-
-a{
-  cursor: pointer;
-}
-
-.tdd > .panel-heading{
+.panel-heading {
   padding: 0px;
+}
+
+.panel-title > a {
   padding-top: 10px;
   padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
 }
