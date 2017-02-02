@@ -24,7 +24,8 @@ const styles = {
     display: 'inline-block',
     verticalAlign: 'top',
     marginRight: '60px',
-    marginLeft: '60px'
+    marginLeft: '60px',
+    marginBottom: '30px'
   },
   title:{
     marginTop: '30px',
