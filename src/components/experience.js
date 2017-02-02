@@ -9,21 +9,27 @@ const styles = {
     paddingTop: '30px',
     paddingBottom: '30px'
   },
-  list: {
-    listStyle: "none"
-  },
   paragraph:{
     display: 'inline-block',
     verticalAlign: 'right',
-    margin: '30px',
+    textAlign: 'left',
     fontSize: '22px',
     paddingBottom: '25px',
-    width: '70%',
+    width: '40%',
     minWidth: '250px',
   },
   date: {
+    fontSize: '22px',
+    fontWeight: 'bold',
     display: 'inline-block',
-    verticalAlign: 'top'
+    verticalAlign: 'top',
+    marginRight: '60px',
+    marginLeft: '60px'
+  },
+  title:{
+    marginTop: '30px',
+    marginBottom: '30px',
+    fontWeight: 'bold'
   }
 }
 
@@ -33,12 +39,11 @@ class Experience extends Component {
       <div style={styles.experience} id="experience">
         <SectionHeader section="experience"/>
         <div>
-          <h2>
+          <h2 style={styles.title}>
             Dev Bootcamp
           </h2>
-          <hr/>
           <h4 style={styles.date}>
-            Augest 2016 - December 2016
+            08/2016 - 12/2016
           </h4>
           <div style={styles.paragraph} >
             <p>
@@ -47,17 +52,15 @@ class Experience extends Component {
             <p>
               The first 9 weeks of the program are remote, while the second 9 weeks are an immersive in-class experience. The program also addresses intra- and interpersonal strategies to fostering optimal learning and team work environments.
             </p>
-            <ul style={styles.list}>
-              <li>
-              - Gained skills to learn new languages, frameworks, libraries, and conventions quickly
-              </li>
-              <li>
-              - Programmed in various dynamics such as pair programming, solo programming, and group collaboration
-              </li>
-            </ul>
+            <p>
+            - Gained skills to learn new languages, frameworks, libraries, and conventions quickly
+            </p>
+            <p>
+            - Programmed in various dynamics such as pair programming, solo programming, and group
+            </p>
           </div>
           <h3>
-          For all other non-technical related work experience. Please refer to resume located <a target="_blank" href="VinceRoti.pdf">here</a>.
+          For all other non-technical related work experience. Please refer to my resume located <a target="_blank" href="VinceRoti.pdf">here</a>.
           </h3>
         </div>
       </div>
