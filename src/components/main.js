@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
 import About from './about';
+import Experience from './experience';
 import Skills from './skills';
 import Portfolio from './portfolio';
 import Footer from './footer'
@@ -29,6 +30,7 @@ class Main extends Component {
           transitionLeave={false}>
           <Header/>
           <About />
+          <Experience />
           <Skills />
           <Portfolio/>
           <Footer />
