@@ -24,8 +24,8 @@ class HoverStar extends Component {
       },
       hover: {
         star: {
-          WebkitTransform: 'rotate(360deg)',
-          transform: 'rotate(360deg)'
+          WebkitTransform: this.props.effect === false ? '' : 'rotate(360deg)',
+          transform: this.props.effect === false ? '' : 'rotate(360deg)'
         }
       }
     }, this.props)
