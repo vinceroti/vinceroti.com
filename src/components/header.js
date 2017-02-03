@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 const styles = {
 
   title: {
-    paddingTop: '30px',
+    marginTop: '30px',
     fontSize: '20px',
   },
 
@@ -19,7 +19,7 @@ const styles = {
     marginTop: '130px',
     textAlign: 'center',
     color: 'white',
-    paddingBottom: '200px'
+    marginBottom: '200px'
   },
 
   line: {
@@ -59,7 +59,7 @@ const styles = {
     marginTop: '30px',
     marginLeft: '10px',
     marginRight: '10px',
-    borderRadius: '0px',
+    borderRadius: '100px',
   }
 
 }
@@ -74,7 +74,7 @@ class Header extends Component {
         <img style={styles.vince} src="images/vince.jpg" alt="Vince Roti"/>
         <h1 style={styles.name}> Vince Roti </h1>
         <hr style={styles.line}/>
-          <HoverStar/>
+          <HoverStar effect={false} />
         <hr style={styles.line} />
         <h4 style={styles.title}> Web Developer </h4>
         <div  >
