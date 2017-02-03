@@ -28,9 +28,13 @@ const styles = {
     marginBottom: '30px'
   },
   title:{
-    marginTop: '30px',
+    marginTop: '24px',
     marginBottom: '30px',
     fontWeight: 'bold'
+  },
+  footer:{
+    fontSize: '30px',
+    margin: '0px 10px 0px 10px'
   }
 }
 
@@ -60,9 +64,9 @@ class Experience extends Component {
             - Programmed in various dynamics such as pair programming, solo programming, and group
             </p>
           </div>
-          <h3>
+          <p style={styles.footer}>
           For all other non-technical related work experience. Please refer to my resume located <a target="_blank" href="VinceRoti.pdf">here</a>.
-          </h3>
+          </p>
         </div>
       </div>
     );
