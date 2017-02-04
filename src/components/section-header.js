@@ -37,12 +37,12 @@ class SectionHeader extends Component {
         <hr style={styles.line} />
         <Waypoint
                  onEnter={() => {
-                   console.log("enter");
                    let el = document.querySelector(`#${this.props.section}-nav`)
-                   console.log(el)
+                   el.style.color = "white"
                  }}
                  onLeave={() => {
-                   console.log("leave");
+                   let el = document.querySelector(`#${this.props.section}-nav`)
+                   el.style.color = "gray"
                  }}
                  />
       </div>
