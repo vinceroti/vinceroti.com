@@ -7,6 +7,7 @@ import Portfolio from './portfolio';
 import Footer from './footer'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +34,7 @@ class Main extends Component {
           <Experience />
           <Skills />
           <Portfolio/>
+
           <Footer />
         </ReactCSSTransitionGroup>
       })

@@ -77,7 +77,7 @@ class Header extends Component {
           <HoverStar effect={false} />
         <hr style={styles.line} />
         <h4 style={styles.title}> Web Developer </h4>
-        <div  >
+        <div>
           <SocialIcon style={styles.icon} url="http://linkedin.com/in/vinceroti" />
           <SocialIcon style={styles.icon} url="https://github.com/vinceroti" color="white"/>
         </div>

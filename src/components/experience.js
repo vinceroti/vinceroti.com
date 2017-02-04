@@ -19,7 +19,7 @@ const styles = {
     minWidth: '250px',
   },
   date: {
-    fontSize: '22px',
+    fontSize: '20px',
     fontWeight: 'bold',
     display: 'inline-block',
     verticalAlign: 'top',
@@ -33,7 +33,7 @@ const styles = {
     fontWeight: 'bold'
   },
   footer:{
-    fontSize: '30px',
+    fontSize: '24px',
     margin: '0px 10px 0px 10px'
   }
 }

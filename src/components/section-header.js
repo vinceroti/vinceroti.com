@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import HoverStar from './hoverstar';
+import Waypoint from 'react-waypoint';
+
 
 class SectionHeader extends Component {
 
@@ -33,6 +35,16 @@ class SectionHeader extends Component {
         <hr style={styles.line}/>
         <HoverStar />
         <hr style={styles.line} />
+        <Waypoint
+                 onEnter={() => {
+                   console.log("enter");
+                   let el = document.querySelector(`#${this.props.section}-nav`)
+                   console.log(el)
+                 }}
+                 onLeave={() => {
+                   console.log("leave");
+                 }}
+                 />
       </div>
     );
   }
