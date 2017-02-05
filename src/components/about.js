@@ -15,7 +15,7 @@ const styles = {
     paddingBottom: '25px',
     margin: 'auto',
     width: '70%',
-    minWidth: '250px',
+    minWidth: '270px',
     fontSize: '22px',
   }
 }

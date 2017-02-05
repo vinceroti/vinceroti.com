@@ -34,12 +34,12 @@ class SectionHeader extends Component {
         <h2 style={styles.title}> {this.props.section.toUpperCase()} </h2>
         <Waypoint
            onEnter={() => {
-             let el = document.querySelector(`#${this.props.section}-nav`)
-             el.style.color = "white"
+             let el = document.querySelector(`#${this.props.section}-nav`);
+             el.style.color = "white";
            }}
            onLeave={() => {
-             let el = document.querySelector(`#${this.props.section}-nav`)
-             el.style.color = "gray"
+             let el = document.querySelector(`#${this.props.section}-nav`);
+             el.style = null;
            }}
         />
         <hr style={styles.line}/>

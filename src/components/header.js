@@ -19,7 +19,7 @@ const styles = {
     marginTop: '130px',
     textAlign: 'center',
     color: 'white',
-    marginBottom: '200px'
+    marginBottom: '220px'
   },
 
   line: {

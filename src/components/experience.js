@@ -15,8 +15,8 @@ const styles = {
     textAlign: 'left',
     fontSize: '22px',
     paddingBottom: '25px',
-    width: '40%',
-    minWidth: '270px',
+    width: '57%',
+    minWidth: '330px',
   },
   date: {
     fontSize: '20px',
@@ -34,7 +34,7 @@ const styles = {
   },
   footer:{
     fontSize: '24px',
-    margin: '0px 10px 0px 10px'
+    margin: '20px 10px 0px 10px'
   }
 }
 
