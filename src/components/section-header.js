@@ -32,19 +32,19 @@ class SectionHeader extends Component {
     return (
       <div>
         <h2 style={styles.title}> {this.props.section.toUpperCase()} </h2>
+        <Waypoint
+           onEnter={() => {
+             let el = document.querySelector(`#${this.props.section}-nav`)
+             el.style.color = "white"
+           }}
+           onLeave={() => {
+             let el = document.querySelector(`#${this.props.section}-nav`)
+             el.style.color = "gray"
+           }}
+        />
         <hr style={styles.line}/>
         <HoverStar />
         <hr style={styles.line} />
-        <Waypoint
-                 onEnter={() => {
-                   let el = document.querySelector(`#${this.props.section}-nav`)
-                   el.style.color = "white"
-                 }}
-                 onLeave={() => {
-                   let el = document.querySelector(`#${this.props.section}-nav`)
-                   el.style.color = "gray"
-                 }}
-                 />
       </div>
     );
   }
