@@ -16,7 +16,7 @@ const styles = {
     fontSize: '22px',
     paddingBottom: '25px',
     width: '57%',
-    minWidth: '330px',
+    minWidth: '350px',
   },
   date: {
     fontSize: '20px',

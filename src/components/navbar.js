@@ -30,7 +30,7 @@ class NavBar extends Component {
     let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
-     <Navbar inverse style={styles.nav}>
+     <Navbar inverse style={styles.nav} >
          <Navbar.Header>
            <Navbar.Brand>
              <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>

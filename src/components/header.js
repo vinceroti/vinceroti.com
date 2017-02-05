@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HoverStar from './hoverstar';
 import { SocialIcon } from 'react-social-icons';
+import Waypoint from 'react-waypoint';
 
 
 const styles = {
@@ -77,6 +78,17 @@ class Header extends Component {
           <HoverStar effect={false} />
         <hr style={styles.line} />
         <h4 style={styles.title}> Web Developer </h4>
+        <Waypoint
+          onEnter={() => {
+            let el = document.querySelector('#vince');
+            el.style.color = "white";
+          }}
+          onLeave={() => {
+            let el = document.querySelector('#vince');
+            el.style = null;
+          }}
+       />
+
         <div>
           <SocialIcon style={styles.icon} url="http://linkedin.com/in/vinceroti" />
           <SocialIcon style={styles.icon} url="https://github.com/vinceroti" color="white"/>
