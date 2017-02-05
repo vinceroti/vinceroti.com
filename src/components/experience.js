@@ -15,11 +15,11 @@ const styles = {
     textAlign: 'left',
     fontSize: '22px',
     paddingBottom: '25px',
-    width: '40%',
-    minWidth: '250px',
+    width: '57%',
+    minWidth: '350px',
   },
   date: {
-    fontSize: '22px',
+    fontSize: '20px',
     fontWeight: 'bold',
     display: 'inline-block',
     verticalAlign: 'top',
@@ -33,8 +33,8 @@ const styles = {
     fontWeight: 'bold'
   },
   footer:{
-    fontSize: '30px',
-    margin: '0px 10px 0px 10px'
+    fontSize: '24px',
+    margin: '20px 10px 0px 10px'
   }
 }
 

@@ -11,9 +11,6 @@ const styles = {
     overFlow: 'hidden',
     border: 'rgba(8, 8, 8, 0)'
   },
-  item: {
-
-  }
 }
 
 class NavBar extends Component {
@@ -33,7 +30,7 @@ class NavBar extends Component {
     let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
-     <Navbar inverse style={styles.nav}>
+     <Navbar inverse style={styles.nav} >
          <Navbar.Header>
            <Navbar.Brand>
              <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
@@ -42,10 +39,10 @@ class NavBar extends Component {
          </Navbar.Header>
          <Navbar.Collapse>
            <Nav pullRight>
-             <NavItem data-scroll data-options={scrollOptions} href="#about">About</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} href="#experience">Experience</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} href="#skills">Skills</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} href="#portfolio">Portfolio</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} id="about-nav" href="#about">About</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} id="experience-nav" href="#experience">Experience</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} id="skills-nav" href="#skills">Skills</NavItem>
+             <NavItem data-scroll data-options={scrollOptions} id="portfolio-nav" href="#portfolio">Portfolio</NavItem>
 
              <NavItem target="_blank" href="VinceRoti.pdf">Resume</NavItem>
            </Nav>
