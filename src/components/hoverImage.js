@@ -8,8 +8,8 @@ class HoverImage extends Component {
     const styles = reactCSS({
       default: {
         image: {
-          paddingLeft: '20px',
-          paddingRight: '20px',
+          marginLeft: '20px',
+          marginRight: '20px',
           display: 'inline-block',
           margin: 'auto',
           marginTop: '40px',
