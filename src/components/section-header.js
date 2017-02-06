@@ -25,7 +25,7 @@ class SectionHeader extends Component {
       title: {
         color: 'white',
         fontWeight: 'bold',
-        fontSize: '40px',
+        fontSize: this.props.customSize ? this.props.customSize : "40px",
         letterSpacing: '2.5px'
       },
     }
@@ -34,16 +34,20 @@ class SectionHeader extends Component {
         <h2 style={styles.title}> {this.props.section.toUpperCase()} </h2>
         <Waypoint
            onEnter={() => {
-             let el = document.querySelector(`#${this.props.section}-nav`);
-             el.style.color = "white";
+              if (document.querySelector(`#${this.props.section}-nav`)){
+                let el = document.querySelector(`#${this.props.section}-nav`);
+                el.style.color = "white";
+              }
            }}
            onLeave={() => {
-             let el = document.querySelector(`#${this.props.section}-nav`);
-             el.style = null;
-           }}
+            if (document.querySelector(`#${this.props.section}-nav`)){
+              let el = document.querySelector(`#${this.props.section}-nav`)
+              el.style = null;
+            }
+          }}
         />
         <hr style={styles.line}/>
-        <HoverStar />
+        <HoverStar effect={this.props.effect} />
         <hr style={styles.line} />
       </div>
     );

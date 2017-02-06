@@ -34,3 +34,51 @@ body {
   font-size: 20px;
   display: block;
 }
+
+.custom-modal {
+  margin: auto;
+}
+
+.modal-content  {
+  color: white;
+  top: 200px;
+  background-color: #222;
+  width: 90%;
+  height: 90%;
+  margin-top: 30px;
+  margin: auto;
+  border-radius: 0px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.modal{
+  overflow-y: auto !important;
+}
+
+.modal-open
+{
+   overflow:auto !important;
+   overflow-x:hidden !important;
+   padding-right: 0 !important;
+}
+
+.modal-body {
+  padding-bottom: 0px;
+}
+
+.modal-footer {
+  border: 0;
+  padding-top: 5px;
+}
