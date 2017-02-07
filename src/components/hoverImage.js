@@ -22,7 +22,7 @@ class HoverImage extends Component {
           WebkitTransitionDuration: '0.3s',
           transitionDuration: '0.3s',
           WebkitTransitionProperty: 'transform',
-          transitionProperty: 'transform'
+          transitionProperty: 'transform',
         }
       },
       hover: {

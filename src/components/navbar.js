@@ -33,7 +33,7 @@ class NavBar extends Component {
      <Navbar inverse style={styles.nav} >
          <Navbar.Header>
            <Navbar.Brand>
-             <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
+            <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
            </Navbar.Brand>
            <Navbar.Toggle />
          </Navbar.Header>

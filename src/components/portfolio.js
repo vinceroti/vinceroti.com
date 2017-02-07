@@ -52,7 +52,7 @@ class Portfolio extends Component {
         <div>
           <Modal  dialogClassName="custom-modal"show={this.state.showWiki} onHide={()=>{this.close("showWiki")}}>
             <Modal.Header style={styles.title} closeButton>
-              <SectionHeader customSize="30px" section="Wikipedia Clone"/>
+              <SectionHeader effect={false} customSize="30px" section="Wikipedia Clone"/>
             </Modal.Header>
             <Modal.Body>
               <p>As a client project at Dev Bootcamp, we were asked to create a Wikipedia clone. Users are allowed to create Pages, revisions, and see previous revisions side by side. Majority of the features are replicated and functioning. We focused extensively on testing during this project and agile development </p>
