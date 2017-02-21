@@ -33,7 +33,7 @@ class Skills extends Component {
       <div style={styles.skills} id="skills">
         <SectionHeader styles={styles.section} section="skills"/>
         <div style={styles.nestedDiv}>
-          <Accordion  style={styles.accordion}>
+          <Accordion id="accordion" style={styles.accordion}>
             <Panel header="Ruby" eventKey="1" style={styles.marginTop} >
             My first programming language that was introduced to me at Dev Bootcamp. Very user friendly and due to extensive documentation and built-in functions, I can solve technical problems with ease. It is by far my strongest language.
             </Panel>
@@ -62,7 +62,7 @@ class Skills extends Component {
             I am very familar with the Mac OS and am comfortable being put into a Mac environment.
             </Panel>
           </Accordion>
-          <Accordion  style={styles.accordion}>
+          <Accordion id="accordion" style={styles.accordion}>
             <Panel style={styles.marginTop} header="Rails" eventKey="2">
             Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby. Rails is a MVC framework, providing default structures for a database, a web service, and web pages. One of the last three weeks at Dev Bootcamp consisted of developing and testing in the Rails framework.
             </Panel>
