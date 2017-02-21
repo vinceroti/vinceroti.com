@@ -7,19 +7,25 @@ body {
 
 .navbar-appear {
   opacity: 0.01;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 }
 
 .navbar-appear.navbar-appear-active {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
 }
 
 .dom-appear {
   opacity: 0.01;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 }
 
 .dom-appear.dom-appear-active {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: opacity .7s ease-in;
   transition: opacity .7s ease-in;
 }
 
@@ -48,19 +54,16 @@ body {
   margin-top: 30px;
   margin: auto;
   border-radius: 0px;
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
   border-radius: 0px !important;
 }
 
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, 0%);
-  -ms-transform: translate(0, 0%);
   transform: translate(0, 0%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .modal{
@@ -82,3 +85,25 @@ body {
   border: 0;
   padding-top: 5px;
 }
+
+@media screen and (max-width:426px){
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  #portfolio button {
+    width: 170px;
+  }
+
+}
+
+@media screen and (max-width:376px){
+  body {
+    width: 376px;
+  }
+
+}
+
