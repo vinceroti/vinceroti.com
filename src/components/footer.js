@@ -4,9 +4,9 @@ const styles = {
   footer: {
     width:'100%',
     height:'30px',
-    position: 'absolute'
   },
   p: {
+    width:'100%',
     fontSize: '12px',
     textAlign: 'center',
     paddingTop: '6px',

@@ -101,7 +101,7 @@ body {
 }
 
 @media screen and (max-width:376px){
-  body {
+  html {
     width: 376px;
   }
 

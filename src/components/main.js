@@ -34,7 +34,9 @@ class Main extends Component {
           <Experience />
           <Skills />
           <Portfolio/>
-          <Footer />
+          <footer>
+            <Footer />
+          </footer>
         </ReactCSSTransitionGroup>
       })
     }
