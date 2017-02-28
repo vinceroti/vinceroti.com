@@ -92,7 +92,7 @@ class Portfolio extends Component {
                 <SectionHeader effect={false} customSize="30px" section="React Live Message"/>
               </Modal.Header>
               <Modal.Body>
-                <p>React Live Message is a small single page application to display how web sockets work with React.js and express. You can talk two clients at the same time and see all messages in real time. All of the chat is presisted to a non-sql database called MongoDB. Link to live page is located <a target="_blank" href="https://react-livechat.herokuapp.com">here</a>.</p>
+                <p>React Live Message is a small single page application to display how web sockets work with React.js and express. You can talk to two clients at the same time and see all messages in real time. All of the chat is presisted to a non-sql database called MongoDB. Link to live page is located <a target="_blank" href="https://react-livechat.herokuapp.com">here</a>.</p>
 
                 <p>Tech – React.js, Express, MongoDB</p>
 
