@@ -58,7 +58,7 @@ class Skills extends Component {
             <Panel header="RSpec" eventKey="15">
             RSpec is ruby's testing suite. At Dev Bootcamp, testing always came first so for every web app I made and console app there was always tests that came along with it.
             </Panel>
-            <Panel header="OSX" eventKey="17">
+            <Panel className="lastPanel"header="OSX" eventKey="17">
             I am very familar with the Mac OS and am comfortable being put into a Mac environment.
             </Panel>
           </Accordion>
