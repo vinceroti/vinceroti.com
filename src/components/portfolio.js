@@ -27,11 +27,6 @@ const styles = {
   modalButton: {
     marginTop: '18px',
     outline: '0'
-  },
-  messageIcon: {
-    background: 'white',
-    padding: 10,
-    borderRadius: 15,
   }
 }
 
@@ -120,7 +115,7 @@ class Portfolio extends Component {
             <HoverImage src="images/iphone.png"  alt="iPhone Logo"/>
           </button>
           <button style={styles.button} onClick={()=>{this.open("showMessage")}}>
-            <HoverImage extraStyle={styles.messageIcon} src="images/message.svg"  alt="Message Logo"/>
+            <HoverImage src="images/message.svg"  alt="Message Logo"/>
           </button>
         </div>
       </div>

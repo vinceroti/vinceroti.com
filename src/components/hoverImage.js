@@ -34,7 +34,7 @@ class HoverImage extends Component {
     }, this.props)
 
     return (
-      <img style={{...styles.image, ...this.props.extraStyle }} src={this.props.src} alt={this.props.alt} />
+      <img style={styles.image} src={this.props.src} alt={this.props.alt} />
     );
   }
 }
