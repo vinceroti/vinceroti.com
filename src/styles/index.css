@@ -90,6 +90,11 @@ body {
   width: 510px;
 }
 
+.message-icon {
+  background: 'white';
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 529px) {
   .lastPanel {
     width: 245px;
