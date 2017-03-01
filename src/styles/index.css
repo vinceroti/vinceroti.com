@@ -112,6 +112,12 @@ body {
   #portfolio button {
     width: 170px;
   }
+}
+
+@media screen and (max-width: 769px) {
+  .modal-content  {
+    top: 70px;
+  }
 
 }
 
