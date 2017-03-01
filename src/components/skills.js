@@ -38,7 +38,7 @@ class Skills extends Component {
             My first programming language that was introduced to me at Dev Bootcamp. Very user friendly and due to extensive documentation and built-in functions, I can solve technical problems with ease. It is by far my strongest language.
             </Panel>
             <Panel header="HTML5" href="#" eventKey="3">
-            HyperText Markup Language, the core of Web Development.
+                HyperText Markup Language, the core of Web Development.
             </Panel>
             <Panel header="JavaScript" eventKey="5">
             My second programming language and an essential tool for Web Development.
@@ -58,8 +58,8 @@ class Skills extends Component {
             <Panel header="RSpec" eventKey="15">
             RSpec is ruby's testing suite. At Dev Bootcamp, testing always came first so for every web app I made and console app there was always tests that came along with it.
             </Panel>
-            <Panel className="lastPanel"header="OSX" eventKey="17">
-            I am very familar with the Mac OS and am comfortable being put into a Mac environment.
+            <Panel header="Linux" eventKey="16">
+            My current laptop is Ubuntu and is my current favorite OS.
             </Panel>
           </Accordion>
           <Accordion id="accordion" style={styles.accordion}>
@@ -75,6 +75,9 @@ class Skills extends Component {
             <Panel header="JQuery" eventKey="8">
             JQuery is a JavaScript library that allows for easy DOM traversal and manipulation. At Dev Bootcamp, I used it to make AJAX calls and manipulate the DOM. My current goal is to ditch JQuery and attempt replicate features with VanillaJS.
             </Panel>
+            <Panel header="OOP" eventKey="18">
+            Ruby was my first introduction to OOP, everything in Ruby is an Object. The skills I gained from learning a class based language like Ruby apply to all languages that are based this way. This helped me understand OOJS, and helped in learning React.
+            </Panel>
             <Panel header="Google Maps API" eventKey="10">
             One of the projects I built at Dev Bootcamp was an iOS app, during the project I focused on the backend which was connected to the Google Maps API. I would ping google maps with keywords and send a reformated JSON object back to the front end.
             </Panel>
@@ -84,8 +87,8 @@ class Skills extends Component {
             <Panel header="Jasmine" eventKey="14">
             Jasmine is the testing suite for JavaScript. For every JavaScript app that was built at Dev Bootcamp, tests where always made as well.
             </Panel>
-            <Panel header="Linux" eventKey="16">
-            My current laptop is Ubuntu and is my current favorite OS.
+            <Panel header="OSX" eventKey="17">
+            I am very familar with the Mac OS and am comfortable being put into a Mac environment.
             </Panel>
           </Accordion>
         </div>
