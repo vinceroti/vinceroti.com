@@ -48,7 +48,7 @@ class Portfolio extends Component {
   }
   render() {
     return (
-      <div style={styles.portfolio} id="portfolio">
+      <article style={styles.portfolio} id="portfolio">
         <div>
           <Modal  dialogClassName="custom-modal"show={this.state.showWiki} onHide={()=>{this.close("showWiki")}}>
             <Modal.Header style={styles.title} closeButton>
@@ -118,7 +118,7 @@ class Portfolio extends Component {
             <HoverImage src="images/message.svg"  alt="Message Logo"/>
           </button>
         </div>
-      </div>
+      </article>
     );
   }
 }

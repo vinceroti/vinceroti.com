@@ -25,7 +25,7 @@ class About extends Component {
   render() {
     return (
 
-      <div style={styles.about}  id="about">
+      <article style={styles.about}  id="about">
         <SectionHeader section="about"/>
         <div style={styles.paragraph}>
           <p>
@@ -36,7 +36,7 @@ class About extends Component {
           Recently, I graduated from Dev Bootcamp, which is a 19-week, intensive, Full Stack web development training program. With all of that being said, I am now currently looking for a new opportunity within the web development field, whether it's front-end or full stack development.
           </p>
         </div>
-      </div>
+      </article>
     );
   }
 }
