@@ -85,7 +85,7 @@ class Header extends Component {
           }}
           onLeave={() => {
             let el = document.querySelector('#vince');
-            el.style = null;
+            el.style.color = null;
           }}
        />
 

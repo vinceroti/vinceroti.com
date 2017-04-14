@@ -30,7 +30,7 @@ const styles = {
 class Skills extends Component {
   render() {
     return (
-      <div style={styles.skills} id="skills">
+      <article style={styles.skills} id="skills">
         <SectionHeader styles={styles.section} section="skills"/>
         <div style={styles.nestedDiv}>
           <Accordion id="accordion" style={styles.accordion}>
@@ -92,7 +92,7 @@ class Skills extends Component {
             </Panel>
           </Accordion>
         </div>
-      </div>
+      </article>
     );
   }
 }
