@@ -2,27 +2,54 @@ import React, { Component } from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import smoothScroll from 'smooth-scroll';
 
-const styles = {
-  nav: {
-    zIndex: '99',
-    top: '0px',
-    position: 'fixed',
-    width: '100%',
-    overFlow: 'hidden',
-    border: 'rgba(8, 8, 8, 0)'
-  },
-}
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { padding: '20px', fontSize: '24px'}
+  }
+
+  componentDidMount(){
+    let that = this;
+    window.addEventListener('scroll', function(e) {
+      let elm = document.querySelector('body');
+      console.log(elm.scrollTop)
+      if (elm.scrollTop > 30){
+        that.setState({padding: '0px', fontSize: '18px'})
+      } else {
+        that.setState({padding: '20px', fontSize: '24px'})
+      }
+    });
+  }
+
   render() {
+    const styles = {
+      nav: {
+        zIndex: '99',
+        top: '0px',
+        position: 'fixed',
+        width: '100%',
+        overFlow: 'hidden',
+        border: 'rgba(8, 8, 8, 0)',
+        paddingTop: this.state.padding,
+        paddingBottom: this.state.padding
+      },
+      trans: {
+        WebkitTransition: 'all 0.3s ease',
+        transition: 'all 0.3s ease',
+      },
+      fontSize: {
+        fontSize: this.state.fontSize
+      }
+    }
     smoothScroll.init();
     let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
-     <Navbar inverse style={styles.nav} >
-         <Navbar.Header>
+     <Navbar inverse style={{...styles.nav, ...styles.trans }} >
+        <Navbar.Header>
            <Navbar.Brand>
-            <a id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
+            <a style={{ ...styles.trans, ...styles.fontSize }} id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
            </Navbar.Brand>
            <Navbar.Toggle />
          </Navbar.Header>
