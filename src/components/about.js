@@ -11,11 +11,8 @@ const styles = {
     paddingBottom: '30px'
   },
   paragraph:{
-    paddingTop: '40px',
-    paddingBottom: '25px',
+    padding: '40px 10px 25px 10px',
     margin: 'auto',
-    width: '70%',
-    minWidth: '300px',
     fontSize: '22px',
   }
 }
