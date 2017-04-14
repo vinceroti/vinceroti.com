@@ -42,9 +42,9 @@ class Main extends Component {
   render() {
 
     return (
-      <div>
+      <main>
         {this.state.main}
-      </div>
+      </main>
     );
   }
 }
