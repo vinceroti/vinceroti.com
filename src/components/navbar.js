@@ -6,20 +6,39 @@ import smoothScroll from 'smooth-scroll';
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = { padding: '20px', fontSize: '24px'}
+    this.state = { padding: '0px', fontSize: '18px' }
+  }
+
+  componentWillMount() {
+    if (window.innerWidth >= 768){
+      this.setState({ padding: '20px', fontSize: '24px'});
+    }
   }
 
   componentDidMount(){
+    let elm = document.querySelector('body');
     let that = this;
     window.addEventListener('scroll', function(e) {
-      let elm = document.querySelector('body');
-      console.log(elm.scrollTop)
-      if (elm.scrollTop > 30){
-        that.setState({padding: '0px', fontSize: '18px'})
-      } else {
-        that.setState({padding: '20px', fontSize: '24px'})
+      if (window.innerWidth >= 768) {
+        if (elm.scrollTop > 30 ){
+          that.setState({padding: '0px', fontSize: '18px'})
+        } else {
+          that.setState({padding: '20px', fontSize: '24px'})
+        }
       }
     });
+
+
+    let resize = function(){
+      if (window.innerWidth >= 768 && elm.scrollTop <= 30){
+        that.setState({ padding: '20px', fontSize: '24px'});
+      } else {
+        that.setState({padding: '0px', fontSize: '18px'});
+      }
+    }
+
+
+    window.onresize = resize;
   }
 
   render() {
@@ -31,7 +50,7 @@ class NavBar extends Component {
         width: '100%',
         overFlow: 'hidden',
         border: 'rgba(8, 8, 8, 0)',
-        paddingTop: this.state.padding,
+        paddingTop: this.state.padding ,
         paddingBottom: this.state.padding
       },
       trans: {
