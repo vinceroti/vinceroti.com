@@ -18,9 +18,9 @@ class Footer extends Component {
 
   render() {
     return (
-     <div style={styles.footer}>
+     <footer style={styles.footer}>
       <div style={styles.p}> Copyright © Vince Roti 2017 </div>
-     </div>
+     </footer>
     );
   }
 };

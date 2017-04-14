@@ -41,7 +41,7 @@ const styles = {
 class Experience extends Component {
   render() {
     return (
-      <div style={styles.experience} id="experience">
+      <article style={styles.experience} id="experience">
         <SectionHeader section="experience"/>
         <div>
           <h2 style={styles.title}>
@@ -68,7 +68,7 @@ class Experience extends Component {
           For all other non-technical related work experience. Please refer to my resume located <a target="_blank" href="VinceRoti.pdf">here</a>.
           </p>
         </div>
-      </div>
+      </article>
     );
   }
 }
