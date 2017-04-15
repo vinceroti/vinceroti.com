@@ -12,6 +12,7 @@ const styles = {
   },
   paragraph:{
     padding: '40px 10px 25px 10px',
+    width: '80%',
     margin: 'auto',
     fontSize: '22px',
   }
