@@ -11,6 +11,7 @@ class NavBar extends Component {
   }
 
   componentWillMount() {
+    smoothScroll.init();
     if (window.innerWidth >= 768){
       this.setState({ padding: '20px', fontSize: '24px'});
     }
@@ -64,7 +65,6 @@ class NavBar extends Component {
         fontSize: this.state.fontSize
       }
     }
-    smoothScroll.init();
     let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
