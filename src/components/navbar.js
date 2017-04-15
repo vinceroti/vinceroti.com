@@ -11,6 +11,7 @@ class NavBar extends Component {
   }
 
   componentWillMount() {
+    smoothScroll.init();
     if (window.innerWidth >= 768){
       this.setState({ padding: '20px', fontSize: '24px'});
     }
@@ -20,8 +21,9 @@ class NavBar extends Component {
     let elm = document.querySelector('body');
     const self = this;
     window.addEventListener('scroll', function(e) {
+      let scroll = window.scrollY || document.documentElement.scrollTop;
       if (window.innerWidth >= 768) {
-        if (window.scrollY > 30 ){
+        if (scroll > 30 ){
           self.setState({padding: '0px', fontSize: '18px'})
         } else {
           self.setState({padding: '20px', fontSize: '24px'})
@@ -64,7 +66,6 @@ class NavBar extends Component {
         fontSize: this.state.fontSize
       }
     }
-    smoothScroll.init();
     let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
