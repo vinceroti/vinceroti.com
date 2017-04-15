@@ -7,6 +7,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = { padding: '0px', fontSize: '18px' }
+    this.componentDidMount = this.componentDidMount.bind(this);
   }
 
   componentWillMount() {
@@ -17,13 +18,13 @@ class NavBar extends Component {
 
   componentDidMount(){
     let elm = document.querySelector('body');
-    let that = this;
+    const self = this;
     window.addEventListener('scroll', function(e) {
       if (window.innerWidth >= 768) {
-        if (elm.scrollTop > 30 ){
-          that.setState({padding: '0px', fontSize: '18px'})
+        if (window.scrollY > 30 ){
+          self.setState({padding: '0px', fontSize: '18px'})
         } else {
-          that.setState({padding: '20px', fontSize: '24px'})
+          self.setState({padding: '20px', fontSize: '24px'})
         }
       }
     });
@@ -31,14 +32,14 @@ class NavBar extends Component {
 
     let resize = function(){
       if (window.innerWidth >= 768 && elm.scrollTop <= 30){
-        that.setState({ padding: '20px', fontSize: '24px'});
+        self.setState({ padding: '20px', fontSize: '24px'});
       } else {
-        that.setState({padding: '0px', fontSize: '18px'});
+        self.setState({padding: '0px', fontSize: '18px'});
       }
     }
 
 
-    window.onresize = resize;
+    window.onresize = resize();
   }
 
   render() {
@@ -56,6 +57,8 @@ class NavBar extends Component {
       trans: {
         WebkitTransition: 'all 0.3s ease',
         transition: 'all 0.3s ease',
+        MozTransition: 'all 0.3s ease',
+        Otransition: 'all 0.3s ease'
       },
       fontSize: {
         fontSize: this.state.fontSize

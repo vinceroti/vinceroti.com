@@ -122,9 +122,9 @@ body {
 }
 
 
-@media screen and (max-width:319px){
-  body {
-    width: 319px;
+@media screen and (max-width:376px){
+  html {
+    width: 376px;
   }
 
 }
