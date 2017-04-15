@@ -42,7 +42,7 @@ class SectionHeader extends Component {
            onLeave={() => {
             if (document.querySelector(`#${this.props.section}-nav`)){
               let el = document.querySelector(`#${this.props.section}-nav`)
-              el.style = null;
+              el.color.style = null;
             }
           }}
         />
