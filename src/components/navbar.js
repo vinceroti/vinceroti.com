@@ -21,7 +21,7 @@ class NavBar extends Component {
     let elm = document.querySelector('body');
     const self = this;
     window.addEventListener('scroll', function(e) {
-      let scroll = window.scrollY || document.document.documentElement.scrollTop;
+      let scroll = window.scrollY || document.documentElement.scrollTop;
       if (window.innerWidth >= 768) {
         if (scroll > 30 ){
           self.setState({padding: '0px', fontSize: '18px'})
