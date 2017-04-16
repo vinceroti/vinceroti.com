@@ -5,6 +5,29 @@ body {
   background-image: url("../images/office.png");
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  /* 1px wider than Lion. */
+  /* This is more usable for users trying to click it. */
+  background-color: #222;
+  -webkit-border-radius: 100px;
+}
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+  /* This is the EXACT color of Mac OS scrollbars.
+
+     Yes, I pulled out digital color meter */
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  -webkit-border-radius: 100px;
+}
+
+
 .navbar-appear {
   opacity: 0.01;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
