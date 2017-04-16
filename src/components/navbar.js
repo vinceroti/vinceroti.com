@@ -6,14 +6,15 @@ import smoothScroll from 'smooth-scroll';
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.state = { padding: '0px', fontSize: '18px' }
-    this.componentDidMount = this.componentDidMount.bind(this);
+    this.topScrollState = { padding: '20px', fontSize: '24px' };
+    this.afterScrollState = { padding: '0px', fontSize: '18px' };
+    this.state = this.topScrollState;
   }
 
   componentWillMount() {
     smoothScroll.init();
     if (window.innerWidth >= 768){
-      this.setState({ padding: '20px', fontSize: '24px'});
+      this.setState(this.topScrollState);
     }
   }
 
@@ -24,9 +25,9 @@ class NavBar extends Component {
       let scroll = window.scrollY || document.documentElement.scrollTop;
       if (window.innerWidth >= 768) {
         if (scroll > 30 ){
-          self.setState({padding: '0px', fontSize: '18px'})
+          self.setState(self.afterScrollState);
         } else {
-          self.setState({padding: '20px', fontSize: '24px'})
+          self.setState(self.topScrollState);
         }
       }
     });
@@ -34,9 +35,9 @@ class NavBar extends Component {
 
     let resize = function(){
       if (window.innerWidth >= 768 && elm.scrollTop <= 30){
-        self.setState({ padding: '20px', fontSize: '24px'});
+        self.setState(self.topScrollState);
       } else {
-        self.setState({padding: '0px', fontSize: '18px'});
+        self.setState(self.afterScrollState);
       }
     }
 
@@ -54,7 +55,7 @@ class NavBar extends Component {
         overFlow: 'hidden',
         border: 'rgba(8, 8, 8, 0)',
         paddingTop: this.state.padding ,
-        paddingBottom: this.state.padding
+        paddingBottom: this.state.padding,
       },
       trans: {
         WebkitTransition: 'all 0.3s ease',
