@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
-import smoothScroll from 'smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 
 
 class NavBar extends Component {
@@ -12,7 +12,7 @@ class NavBar extends Component {
   }
 
   componentWillMount() {
-    smoothScroll.init();
+    new SmoothScroll('a[href*="#"]', {"speed": 800,"easing": "easeInOutQuad"});
     if (window.innerWidth >= 768){
       this.setState(this.topScrollState);
     }
@@ -67,22 +67,21 @@ class NavBar extends Component {
         fontSize: this.state.fontSize
       }
     }
-    let scrollOptions = '{"speed": 800,"easing": "easeInOutQuad"}';
 
     return (
      <Navbar inverse style={{...styles.nav, ...styles.trans }} >
         <Navbar.Header>
            <Navbar.Brand>
-            <a style={{ ...styles.trans, ...styles.fontSize }} id="vince" href="#vince" data-scroll data-options={scrollOptions}>Vince Roti</a>
+            <a style={{ ...styles.trans, ...styles.fontSize }} id="vince" href="#vince">Vince Roti</a>
            </Navbar.Brand>
            <Navbar.Toggle />
          </Navbar.Header>
          <Navbar.Collapse>
            <Nav pullRight>
-             <NavItem data-scroll data-options={scrollOptions} id="about-nav" href="#about">About</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} id="experience-nav" href="#experience">Experience</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} id="skills-nav" href="#skills">Skills</NavItem>
-             <NavItem data-scroll data-options={scrollOptions} id="portfolio-nav" href="#portfolio">Portfolio</NavItem>
+             <NavItem id="about-nav" href="#about">About</NavItem>
+             <NavItem id="experience-nav" href="#experience">Experience</NavItem>
+             <NavItem id="skills-nav" href="#skills">Skills</NavItem>
+             <NavItem id="portfolio-nav" href="#portfolio">Portfolio</NavItem>
 
              <NavItem target="_blank" href="VinceRoti.pdf">Resume</NavItem>
            </Nav>
