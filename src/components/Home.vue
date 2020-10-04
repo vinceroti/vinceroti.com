@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "main",
+  name: "home",
   props: {
     msg: String,
   },
