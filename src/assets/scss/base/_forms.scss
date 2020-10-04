@@ -1,0 +1,374 @@
+@import "vue-multiselect/dist/vue-multiselect.min.css";
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  font-family: font-family(sans-serif);
+  font-weight: font-weight(sans-serif-regular);
+  #{headings(1,6)} {
+    width: 100%;
+  }
+}
+label {
+  display: block;
+  font-weight: font-weight(sans-serif-regular);
+  width: 100%;
+  margin: 0 0 spacing(element) 0;
+}
+select,
+.multiselect,
+.multiselect__input,
+.multiselect__single,
+.multiselect__tags {
+  font-family: font-family(sans-serif);
+  font-weight: font-weight(sans-serif-regular);
+  font-size: rem(15);
+  line-height: 1em;
+  border-radius: 0;
+}
+.multiselect {
+  min-height: $input-height;
+}
+.multiselect__placeholder,
+.multiselect__single {
+  padding-top: rem(11);
+}
+.multiselect__tags {
+  box-sizing: border-box;
+  border-color: color(light-gray);
+  min-height: $input-height;
+  padding-right: $input-height;
+  padding-top: 0;
+  input[type="text"] {
+    box-shadow: none;
+    height: rem(30);
+    padding: 0;
+    margin: 0;
+  }
+}
+.multiselect__current {
+  min-height: $input-height;
+}
+.multiselect__select {
+  height: $input-height;
+  line-height: 1.4em;
+  &::before {
+    display: block;
+    content: '';
+    transition: background-image 0.2s linear;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: inline-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.56 20"><path fill="' + color(black) + '" d="M10 8.44L1.56 0 0 1.56 8.44 10 0 18.44 1.56 20 10 11.56 11.56 10z"/></svg>');
+    width: rem(13);
+    height: rem(13);
+    margin: 0;
+    position: absolute;
+    right: rem(10);
+    top: 63%;
+    transform: translateY(-63%) rotate(90deg);
+    transition: all 0.3s ease;
+    border: 0;
+  }
+}
+.multiselect--active {
+  transform: none;
+  .multiselect__select {
+    transform: none;
+    &::before {
+      top: 20%;
+      transform: rotate(270deg);
+
+    }
+  }
+}
+.multiselect__content-wrapper {
+  border-radius: 0;
+}
+.multiselect--above {
+  .multiselect__content-wrapper {
+    border-radius: 0;
+  }
+}
+.multiselect__option {
+  display: flex;
+  align-items: center;
+  min-height: $input-height;
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  &::after {
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.multiselect__option--selected {
+  background-color: color(dark-gray);
+  color: color(white);
+  &::after {
+    color: color(white);
+    background-color: color(dark-gray);
+  }
+}
+.multiselect__option--highlight {
+  background-color: color(black);
+  &::after {
+    background-color: color(black);
+    color: color(white);
+  }
+  &.multiselect__option--selected {
+    background-color: color(black);
+    &::after {
+      background-color: color(black);
+    }
+  }
+}
+.multiselect__option--disabled {
+  color: color(medium-gray) !important;
+  background-color: color(light-gray) !important;
+}
+[dir=rtl] {
+  .multiselect__tags {
+    padding-left: $input-height;
+  }
+}
+.multiselect--active {
+  .multiselect__content-wrapper {
+    border-right: 1px solid color(light-gray);
+    border-bottom: 1px solid color(light-gray);
+    border-left: 1px solid color(light-gray);
+  }
+}
+@include inputs-text() {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: color(white);
+  box-shadow: inset 0 0 0 1px color(light-gray);
+  border: none;
+  width: 100%;
+  height: $input-height;
+  padding: 0 spacing(half);
+  margin: 0 0 rem(1) 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  font-size: font-size(base);
+  font-weight: font-weight(sans-serif-regular);
+  &::placeholder{
+    opacity: 0.5;
+  }
+  &.input-error {
+    border: 1px solid color(red);
+  }
+}
+textarea {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: color(white);
+  box-shadow: inset 0 0 0 1px color(light-gray);
+  border: none;
+  width: 100%;
+  min-height: 10vh;
+  padding: spacing(half);
+  margin: 0 0 spacing(element) 0;
+}
+fieldset {
+  width: 100%;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  margin: 0 0 spacing(half) 0;
+  @include respond-to(medium) {
+    width: calc(50% - 20px);
+  }
+  label {
+    width: 100%;
+    margin: 0 0 spacing(paragraph);
+  }
+}
+.form-group-half {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  margin: 0 0 spacing(half) 0;
+
+}
+.form-group-full {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+  margin: 0 0 spacing(half) 0;
+}
+.form-group-buttons {
+  justify-content: flex-start;
+  margin-right: 50%;
+  a,
+  button,
+  .button-primary,
+  .button-secondary {
+    margin-right: spacing(paragraph);
+  }
+}
+.required,
+.optional {
+  font-size: font-size(label);
+  font-weight: font-weight(sans-serif-regular);
+  color: color(medium-gray);
+  margin-left: spacing(element);
+}
+.veritas {
+  border: none !important;
+  background-color: transparent !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.error-form {
+  color: color(red);
+  margin: 5px 0 10px 0;
+  border: 2px solid color(red);
+  background-color: rgba(193, 66, 66, 0.25);
+  padding: 5px 7px;
+  display: block;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.error-message,
+span.error {
+  color: color(red);
+  margin: 5px 0 10px 0;
+  border: 2px solid color(red);
+  padding: 5px 7px;
+  display: block;
+  box-sizing: border-box;
+  clear: both;
+}
+.radio-check-wrapper {
+  color: color(black);
+  &:hover {
+    label {
+    text-transform: underline;
+    }
+
+  }
+}
+.input-button {
+  position: relative;
+  input {
+    margin-top: spacing(base);
+    padding-right: spacing(double);
+    margin: 0;
+    height: rem(40);
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid color(black);
+    font-size: font-size(h6);
+    @include respond-to(medium) {
+      padding-left: 0;
+      padding-right: rem(15);
+    }
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: rem(40);
+    border: 0;
+    padding: 0;
+    background-position: right;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+.form-group-error {
+  input[type=text] {
+    border: 1px solid color(red);
+  }
+  input[type=number] {
+    border: 1px solid color(red);
+  }
+  .multiselect {
+    box-shadow: 0 0 0 1px color(red);
+    input {
+      border: 0;
+    }
+  }
+  .required {
+    color: color(red);
+  }
+  .error {
+    color: color(red);
+    font-size: font-size(label);
+    line-height: 1rem;
+    width: 100%;
+  }
+}
+.form-group-success {
+  .success {
+    color: color(green);
+  }
+}
+.file-upload {
+  display: block;
+
+  label {
+    margin: 0;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .file-name {
+    text-align: center;
+    border: 1px solid color(light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: spacing(double);
+    padding: rem(5);
+  }
+
+  .button-basic {
+    margin-top: spacing(element);
+    background: color(light-gray);
+    padding: spacing(base);
+    color: color(black);
+    text-decoration: none;
+    border: 1px solid color(light-gray);
+    border-bottom: 0;
+    padding: rem(3) spacing(double) 0;
+    height: spacing(double);
+    width: 100%;
+    background: linear-gradient(to bottom,
+        color(light-gray) 51%,
+        rgba(245, 245, 245, 1) 100%);
+
+    &::before {
+      display: block;
+      content: "";
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: inline-svg('<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve"> <g> <g id="_x31_0_28_"> <g> <path d="M218.953,197.915L285.6,117.13v290.864c0,11.281,9.139,20.44,20.4,20.44s20.4-9.139,20.4-20.44V116.355l67.299,81.559 c7.997,8.038,20.972,8.038,28.969,0c7.996-8.038,7.996-21.053,0-29.09L321.851,46.608c-4.264-4.284-9.935-6.1-15.504-5.814 c-5.589-0.285-11.24,1.53-15.504,5.814L189.985,168.824c-7.997,8.038-7.997,21.053,0,29.09 C197.982,205.952,210.957,205.952,218.953,197.915z M591.6,367.235c-11.261,0-20.399,9.139-20.399,20.399v142.8H40.8v-142.8 c0-11.261-9.139-20.399-20.4-20.399S0,376.374,0,387.635v163.2c0,11.261,9.139,20.4,20.4,20.4h571.2 c11.261,0,20.4-9.14,20.4-20.4v-163.2C612,376.354,602.86,367.235,591.6,367.235z"/> </g> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>'
+        );
+      width: rem(20);
+      height: rem(20);
+      margin-bottom: rem(3);
+      margin-right: spacing(paragraph);
+    }
+  }
+}
