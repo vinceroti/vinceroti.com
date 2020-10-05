@@ -1,18 +1,21 @@
 <template>
-  <Main msg="Welcome to Your Vue.js App" />
+  <Header />
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <script>
-import Main from "./components/Main.vue";
+import Header from "@/components/Header.vue";
 
 export default {
   name: "app",
   components: {
-    Main,
+    Header,
   },
 };
 </script>
 
 <style lang="scss">
-@import "./assets/scss/_index.scss";
+@import "./assets/scss/base/_index.scss";
 </style>
