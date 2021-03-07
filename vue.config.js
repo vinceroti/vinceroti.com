@@ -8,19 +8,13 @@ module.exports = {
       },
     },
   },
-  pluginOptions: {
-    electronBuilder: {
-      preload: "src/preload.js",
-      nodeIntegration: true,
-    },
-  },
   configureWebpack: {
     plugins: [
       new GoogleFontsPlugin({
         fonts: [
           {
-            family: "Commissioner",
-            variants: ["400", "400italic", "700", "700italic"],
+            family: "Open Sans",
+            variants: ["400", "400i", "600", "600i"],
           },
         ],
         /* ...options */
