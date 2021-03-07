@@ -12,7 +12,7 @@
   font-size: font-size(h2-mobile);
   font-weight: font-weight(sans-serif-bold);
   text-transform: uppercase;
-  color: color(medium-gray);
+  color: color(black);
   margin: 0 0 spacing(half);
   @include respond-to(medium) {
     font-size: font-size(h2);

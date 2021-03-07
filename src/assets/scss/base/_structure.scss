@@ -1,23 +1,27 @@
 body {
-  background-color: color(extra-light-gray);
+  background-color: color(white);
 }
 
 body,
 #app {
-  display: flex;
   min-height: 100vh;
 }
 
+#app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .wrapper {
-  background-color: color(extra-light-gray);
+  background-color: color(white);
 }
 
 main {
   position: relative;
   flex: 1 0 auto;
-  width: 100%;
   display: flex;
   align-items: center;
+  width: 80%;
 }
 
 .container {

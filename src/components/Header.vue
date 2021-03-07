@@ -1,7 +1,7 @@
 <template>
   <header>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <a to="/">Home</a>
+    <a to="/about">About</a>
   </header>
 </template>
 
@@ -15,8 +15,13 @@ export default {
 header {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  padding: spacing(base);
+  position: sticky;
+  top: 50%;
   height: 100%;
+  width: rem(100);
+  text-align: center;
+}
+a {
+  width: 100%;
 }
 </style>
