@@ -1,27 +1,27 @@
 <template>
   <div id="app">
-    <Header />
+    <NavBar />
     <main>
       <div>
-        <Info />
-        <About />
-        <Resume />
+        <Home id="home" />
+        <About id="about" />
+        <Resume id="resume" />
       </div>
     </main>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Info from "@/components/Info.vue";
+import NavBar from "@/components/NavBar.vue";
+import Home from "@/components/Home.vue";
 import About from "@/components/About.vue";
 import Resume from "@/components/Resume.vue";
 
 export default {
   name: "app",
   components: {
-    Header,
-    Info,
+    NavBar,
+    Home,
     About,
     Resume,
   },

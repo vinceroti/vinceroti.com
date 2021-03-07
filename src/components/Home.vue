@@ -1,5 +1,5 @@
 <template>
-  <section class="info">
+  <section class="home">
     <div class="headshot-image">
       <img alt="Vince Roti Image" :src="image" />
     </div>
@@ -12,7 +12,7 @@
 <script>
 import image from "../assets/vince.jpg";
 export default {
-  name: "info",
+  name: "home",
   data() {
     return {
       image,
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.info {
+.home {
   display: flex;
   flex-wrap: wrap;
 }
