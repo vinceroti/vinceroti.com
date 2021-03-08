@@ -4,8 +4,12 @@
     <main>
       <div>
         <Home id="home" />
-        <About id="about" />
-        <Resume id="resume" />
+        <Observer>
+          <About id="about" />
+        </Observer>
+        <Observer>
+          <Resume id="resume" />
+        </Observer>
       </div>
     </main>
   </div>
@@ -16,6 +20,7 @@ import NavBar from "@/components/NavBar.vue";
 import Home from "@/components/Home.vue";
 import About from "@/components/About.vue";
 import Resume from "@/components/Resume.vue";
+import Observer from "@/components/Observer.vue";
 
 export default {
   name: "app",
@@ -24,6 +29,7 @@ export default {
     Home,
     About,
     Resume,
+    Observer,
   },
 };
 </script>

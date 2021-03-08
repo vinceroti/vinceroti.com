@@ -8,12 +8,14 @@
       <a
         href="https://github.com/vinceroti/"
         title="Vince Roti's Github Profile"
+        target="_blank"
       >
         <github />
       </a>
       <a
         href="https://www.linkedin.com/in/vinceroti/"
         title="Vince Roti's Linkedin Profile"
+        target="_blank"
       >
         <linkedin />
       </a>
@@ -49,6 +51,12 @@ svg {
   height: rem(75);
 }
 a {
+  .linkedin {
+    circle {
+      transition: fill 170ms ease-in-out 0s;
+      fill: color(white);
+    }
+  }
   .github {
     border: 2px solid color(black);
     margin-right: spacing(half);
@@ -56,13 +64,17 @@ a {
       fill: color(black);
     }
   }
-  &:hover .linkedin .social-svg-icon {
-    fill: color(black);
-  }
-  &:hover .github {
-    background-color: color(black);
-    .social-svg-icon {
-      fill: color(white);
+  &:hover {
+    .linkedin {
+      circle {
+        fill: color(black);
+      }
+    }
+    .github {
+      background-color: color(black);
+      .social-svg-icon {
+        fill: color(white);
+      }
     }
   }
 }
