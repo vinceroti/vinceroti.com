@@ -1,12 +1,24 @@
 <template>
   <header>
-    <a @click="click" href="#home">Home</a>
-    <a @click="click" href="#about">About</a>
-    <a @click="click" href="#resume">Resume</a>
+    <a @click="click" :class="{ active: inView === 'home' }" href="#home"
+      >Home</a
+    >
+    <a @click="click" :class="{ active: inView === 'about' }" href="#about"
+      >About</a
+    >
+    <a @click="click" :class="{ active: inView === 'resume' }" href="#resume"
+      >Resume</a
+    >
   </header>
 </template>
 <script>
 export default {
+  props: {
+    inView: {
+      type: String,
+      default: "",
+    },
+  },
   methods: {
     click(e) {
       e.preventDefault();
@@ -33,5 +45,10 @@ header {
 }
 a {
   width: 100%;
+  font-weight: font-weight(open-sans-bold);
+  transition: color 0.3s ease-in-out;
+}
+.active {
+  color: color(black);
 }
 </style>

@@ -166,6 +166,13 @@ h2 {
   width: 100%;
   text-align: center;
 }
+h3 {
+  position: sticky;
+  top: 0;
+  background: color(white);
+  display: block;
+  padding: rem(10) 0;
+}
 li {
   list-style: none;
 }

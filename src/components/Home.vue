@@ -1,7 +1,7 @@
 <template>
   <section class="home">
     <div class="headshot-image">
-      <img alt="Vince Roti Image" :src="image" />
+      <VueImage alt="Vince Roti Image" :src="headshotSrc" />
     </div>
     <div class="copy">
       <h1>Hi,<br />I'm Vince, <br />Web Developer.</h1>
@@ -24,19 +24,21 @@
 </template>
 
 <script>
-import image from "../assets/vince.jpg";
-import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
+import VueImage from "@/components/VueImage.vue";
+import headshotSrc from "@/assets/vince.jpg";
+import github from "@/assets/github.svg";
+import linkedin from "@/assets/linkedin.svg";
 
 export default {
   name: "home",
   components: {
     github,
     linkedin,
+    VueImage,
   },
   data() {
     return {
-      image,
+      headshotSrc,
     };
   },
 };

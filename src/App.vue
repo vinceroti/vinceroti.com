@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <NavBar />
-    <main>
-      <div>
-        <Home id="home" />
-        <Observer>
-          <About id="about" />
-        </Observer>
-        <Observer>
-          <Resume id="resume" />
-        </Observer>
-      </div>
-    </main>
+    <transition name="fade" appear>
+      <NavBar :in-view="elmInView" />
+    </transition>
+    <transition name="fade" appear>
+      <main>
+        <div>
+          <Observer @in-view="inView('home')" :no-transition="true">
+            <Home id="home" />
+          </Observer>
+          <Observer @in-view="inView('about')">
+            <About id="about" />
+          </Observer>
+          <Observer @in-view="inView('resume')">
+            <Resume id="resume" />
+          </Observer>
+        </div>
+      </main>
+    </transition>
   </div>
 </template>
 
@@ -31,6 +37,20 @@ export default {
     Resume,
     Observer,
   },
+  data() {
+    return {
+      loaded: true,
+      elmInView: "home",
+    };
+  },
+  mounted() {
+    this.loaded = true;
+  },
+  methods: {
+    inView(id) {
+      this.elmInView = id;
+    },
+  },
 };
 </script>
 
@@ -43,6 +63,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  min-height: 100vh;
+  min-height: 102vh;
 }
 </style>
