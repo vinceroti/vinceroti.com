@@ -167,17 +167,29 @@ h2 {
   text-align: center;
 }
 h3 {
-  position: sticky;
-  top: 0;
   background: color(white);
   display: block;
-  padding: rem(10) 0;
+  text-align: center;
+  @include respond-to(medium) {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    padding: rem(10) 0;
+  }
+}
+ul {
+  padding: 0;
+  @include respond-to(medium) {
+    padding-left: spacing(base);
+  }
 }
 li {
   list-style: none;
 }
 .resume {
-  width: 95%;
+  @include respond-to(medium) {
+    width: 95%;
+  }
 }
 .skills-container {
   display: flex;
