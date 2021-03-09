@@ -167,11 +167,11 @@ h2 {
   text-align: center;
 }
 h3 {
-  background: color(white);
   display: block;
   text-align: center;
   @include respond-to(medium) {
     position: sticky;
+    background: color(white);
     top: 0;
     text-align: left;
     padding: rem(10) 0;

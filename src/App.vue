@@ -5,7 +5,7 @@
     </transition>
     <transition name="fade" appear>
       <main>
-        <div>
+        <div class="container">
           <Observer @in-view="inView('home')" :no-transition="true">
             <Home id="home" />
           </Observer>
@@ -58,11 +58,13 @@ export default {
 @import "./assets/scss/base/_index.scss";
 
 section {
-  width: 100%;
   margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   min-height: 102vh;
+  @include respond-to(medium) {
+    padding: 0;
+  }
 }
 </style>

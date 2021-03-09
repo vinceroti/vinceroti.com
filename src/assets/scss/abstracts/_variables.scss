@@ -79,7 +79,9 @@ $transitions: (dropdown: (time: 0.3s,
   ));
 
 // Z-indexes
-$zindex: (behind: -1,
+$zindex: (
+  hidden: -2,
+  behind: -1,
   base: 0,
   page: 1,
   dropdown: 2,
