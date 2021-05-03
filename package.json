@@ -10,9 +10,12 @@
   "dependencies": {
     "@beyonk/google-fonts-webpack-plugin": "^1.5.0",
     "core-js": "^3.6.5",
+    "install": "^0.13.0",
     "lodash": "^4.17.20",
+    "npm": "^7.11.2",
     "particles.vue": "^2.9.3",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-meta": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -27,6 +30,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-0",
     "eslint-plugin-vue-a11y": "0.0.31",
+    "prerender-spa-plugin": "^3.4.0",
     "prettier": "2.1.2",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.3",

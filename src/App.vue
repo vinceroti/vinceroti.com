@@ -42,6 +42,20 @@ export default {
     Resume,
     Observer,
   },
+  metaInfo: {
+    title: "Vince Roti - Web Developer",
+    htmlAttrs: {
+      lang: "en-US",
+    },
+    meta: [
+      { charset: "utf-8" },
+      {
+        name: "description",
+        content: "Hi, I'm Vince. Hire me!",
+      },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    ],
+  },
   data() {
     return {
       loaded: true,
