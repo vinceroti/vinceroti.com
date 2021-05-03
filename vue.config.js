@@ -8,6 +8,7 @@ module.exports = {
       },
     },
   },
+
   chainWebpack: (config) => {
     const svgRule = config.module.rule("svg");
 
@@ -20,6 +21,7 @@ module.exports = {
       .use("vue-svg-loader")
       .loader("vue-svg-loader");
   },
+
   configureWebpack: {
     plugins: [
       new GoogleFontsPlugin({
@@ -32,5 +34,15 @@ module.exports = {
         /* ...options */
       }),
     ],
+  },
+
+  pluginOptions: {
+    prerenderSpa: {
+      registry: undefined,
+      renderRoutes: ["/"],
+      useRenderEvent: true,
+      headless: true,
+      onlyProduction: true,
+    },
   },
 };

@@ -7,4 +7,5 @@ Vue.use(VueMeta);
 new Vue({
   el: "#app",
   render: (h) => h(App),
+  mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
 });

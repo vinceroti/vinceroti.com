@@ -214,6 +214,7 @@ h3 {
 }
 ul {
   padding: 0;
+  margin-bottom: spacing(section);
   @include respond-to(medium) {
     padding-left: spacing(base);
   }
