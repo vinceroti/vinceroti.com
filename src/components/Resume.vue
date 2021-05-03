@@ -222,6 +222,11 @@ ul {
 li {
   list-style: none;
 }
+.resume-entry {
+  ul {
+    margin: 0;
+  }
+}
 .download {
   &:hover {
     svg {

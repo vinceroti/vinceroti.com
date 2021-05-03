@@ -1,5 +1,5 @@
 <template>
-  <div class="text">
+  <div class="text resume-entry">
     <span class="date">{{ date }}</span>
     <h4>{{ title }}</h4>
     <span class="position">{{ position }}</span>
