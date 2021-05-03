@@ -90,9 +90,8 @@ a {
   text-align: center;
   width: 100%;
   @include respond-to(medium) {
-    width: auto;
     margin: 0;
-    max-width: rem(400);
+    width: rem(400);
   }
 }
 .copy {
