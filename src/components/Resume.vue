@@ -1,113 +1,138 @@
 <template>
   <section class="resume">
-    <h2>Resume</h2>
+    <h2>
+      Resume
+      <a
+        href="/VinceRoti.pdf"
+        target="_blank"
+        class="download"
+        title="Download Vince Roti's Resume"
+        ><download />
+      </a>
+    </h2>
     <div>
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
-        </li>
-        <li>
-          <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
-        </li>
-        <li>
-          <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
-        </li>
-      </ul>
       <h3>Work Experience</h3>
       <ul>
         <li>
           <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
+            date="May 2017 to Current"
+            title="K2 SPORTS"
+            position="Frontend Web Developer"
+          >
+            <p>
+              During my tenure at K2, I've built sites on to Demandware,
+              maintained legacy software on Ruby on Rails, rebuilt and
+              overhauled our Rails and Demandware sites to our team developed
+              tech stack (Nuxt.js / ContentStack / Bigcommerce / Amplience) with
+              scalability and best practices in mind All while helping onboard
+              contractors to meet critical deadlines and helping our DevOps team
+              to ensure successful releases and site stability.
+            </p>
+            <ul>
+              <li>
+                - Migration of marketing/e-commerce sites from Demandware to
+                Single Page Applications
+              </li>
+              with SSR (ex: k2snow.com)
+              <li>
+                - Implementation of Vue/Vue-cli/Nuxt for Server Side Rendering
+                of all marketing and ecommerce sites
+              </li>
+              <li>
+                - Implemented Vuex for State Management of Vue Applications
+              </li>
+              <li>- Integration of 3rd party Rest API into new architecture</li>
+              <li>- Performance and Accessibility audits of all new sites</li>
+              <li>
+                - Managed communication and deployments with backend development
+                team for successful release
+              </li>
+            </ul>
+          </ResumeEntry>
         </li>
         <li>
           <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
-        </li>
-        <li>
-          <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
+            date="Aug. 2016 to Dec. 2016"
+            title="DEV BOOTCAMP"
+            position="Web Development Graduate"
+          >
+            <p>
+              I graduated from Dev Bootcamp which is a 19-week intensive
+              training program for aspiring web developers, specializing in
+              Ruby, Rails, HTML5, CSS, Test Driven Development, Object-Oriented
+              Javascript (AJAX, JQuery), Git and Source control, Heroku and
+              Agile Development.
+            </p>
+            <ul>
+              <li>
+                - Gained skills to learn new languages, frameworks, libraries,
+                and conventions quickly.
+              </li>
+              <li>
+                - Programmed in various dynamics such as pair programming, solp
+                programming, and group collaboration.
+              </li>
+            </ul>
+          </ResumeEntry>
         </li>
       </ul>
-      <h3>Skills</h3>
+      <h3>Education</h3>
       <ul>
         <li>
           <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
+            title="Dev Bootcamp"
+            position="Full-Stack Web Development 2016"
           />
         </li>
         <li>
           <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
+            title="College Of DuPage"
+            position="Associate of Arts 2015"
           />
         </li>
+      </ul>
+      <h3>Projects</h3>
+      <ul>
         <li>
-          <ResumeEntry
-            date="2014-2015"
-            title="Diploma in Computer"
-            position="Diploma in Computer"
-            text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have."
-          />
+          <ResumeEntry title="GOOGLE SKI PLOTTER">
+            <p>
+              Google ski plotter is an Express/Vue web app that takes your
+              google location data and determines if you're skiing or
+              snowboarding based on location data and activity data provided by
+              Google. This web app is for android users only who allow location
+              data tracking by google.
+            </p>
+            <p>
+              Tech - Node, Express, Vue, Websockets, Axios, JSONstream, pm2,
+              SCSS
+            </p>
+          </ResumeEntry>
+          <ResumeEntry title="REMIND">
+            <p>
+              Remind is an iOS app that allows users to create a list of items
+              that they want to buy at a store. It will nd locations that have
+              that item and notify you when you are near the location that has
+              that item.
+            </p>
+            <p>
+              Tech – Ruby on Rails, Google Maps API, Heroku, Swift and xCode
+            </p>
+            <p>
+              Roles – Back-end rails RESTful API which talked to Google Maps and
+              the iOS app
+            </p>
+          </ResumeEntry>
+          <ResumeEntry title="WIKIPEDIA CLONE">
+            <p>
+              As a client project at Dev Bootcamp, we were asked to create a
+              Wikipedia clone. Users can create pages, revisions, and see
+              previous revisions side by side. The majority of the features are
+              replicated and functioning. We focused extensively on testing
+              during this project and agile development.
+            </p>
+            <p>Tech – Ruby on Rails, Ajax, jQuery, and Circle CI</p>
+            <p>Roles – Front-end and Backend</p>
+          </ResumeEntry>
         </li>
       </ul>
       <div>
@@ -154,10 +179,12 @@
 </template>
 <script>
 import ResumeEntry from "@/components/ResumeEntry.vue";
+import download from "@/assets/download.svg";
 export default {
   name: "resume",
   components: {
     ResumeEntry,
+    download,
   },
 };
 </script>
@@ -165,16 +192,24 @@ export default {
 h2 {
   width: 100%;
   text-align: center;
+  margin-bottom: spacing(base);
 }
 h3 {
-  display: block;
+  display: inline-block;
   text-align: center;
+  font-size: font-size(h4);
+  background-color: color(black);
+  padding: rem(10) rem(10);
+  color: color(white);
+  margin: 0;
   @include respond-to(medium) {
     position: sticky;
-    background: color(white);
     top: 0;
+    width: rem(200);
     text-align: left;
-    padding: rem(10) 0;
+    font-size: font-size(h6);
+    background-color: color(black);
+    color: color(white);
   }
 }
 ul {
@@ -185,6 +220,18 @@ ul {
 }
 li {
   list-style: none;
+}
+.download {
+  &:hover {
+    svg {
+      fill: color(light-gray);
+    }
+  }
+  svg {
+    width: rem(25);
+    height: rem(25);
+    transition: fill 0.2s ease-in-out;
+  }
 }
 .resume {
   @include respond-to(medium) {
@@ -200,6 +247,7 @@ li {
 .tools-tech,
 .knowledge {
   margin: 0 spacing(base);
+  margin-bottom: spacing(base);
   ul {
     margin: 0 auto;
     padding: 0;

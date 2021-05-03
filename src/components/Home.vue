@@ -83,12 +83,23 @@ a {
 .home {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .headshot-image {
-  max-width: rem(400);
+  margin: spacing(double) 0;
+  text-align: center;
+  width: 100%;
+  border: 1px solid color(black);
+  @include respond-to(medium) {
+    width: auto;
+    margin: 0;
+    max-width: rem(400);
+  }
 }
 .copy {
   margin: auto 0;
-  padding: spacing(base);
+  @include respond-to(medium) {
+    padding: spacing(base);
+  }
 }
 </style>

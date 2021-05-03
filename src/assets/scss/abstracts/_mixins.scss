@@ -59,23 +59,8 @@
   -webkit-tap-highlight-color: transparent;
   font-weight: font-weight(open-sans-bold);
   transition: color 0.3s ease-in-out;
-  position: relative;
-  &:after {
-    content: " ";
-    width: 100%;
-    border-bottom: 1px solid color(black);
-    max-width: 0;
-    transition: max-width 0.3s ease-in-out;
-    bottom: 0;
-    position: absolute;
-    display: block;
-  }
-  &:hover,
-  &.active {
+  &:hover{
     color: color(black);
-    &:after {
-      max-width: 100%;
-    }
   }
 }
 @mixin mini-a {

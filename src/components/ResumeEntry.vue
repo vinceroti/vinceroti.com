@@ -3,9 +3,9 @@
     <span class="date">{{ date }}</span>
     <h4>{{ title }}</h4>
     <span class="position">{{ position }}</span>
-    <p>
+    <slot>
       {{ text }}
-    </p>
+    </slot>
   </div>
 </template>
 
@@ -35,19 +35,18 @@ export default {
 <style lang="scss" scoped>
 .date {
   font-weight: font-weight(sans-serif-bold);
+  margin-bottom: spacing(element);
+  display: block;
 }
 .position {
   display: block;
   margin-bottom: spacing(element);
 }
 .text {
-  background: color(extra-light-gray);
+  background: color(white);
   margin: spacing(base) 0;
   padding: spacing(base);
-  border-radius: rem(5);
   transition: background-color 0.2s ease-in-out;
-  &:hover {
-    background: color(white);
-  }
+  border: 1px solid color(light-gray);
 }
 </style>
