@@ -89,7 +89,6 @@ a {
   margin: spacing(double) 0;
   text-align: center;
   width: 100%;
-  border: 1px solid color(black);
   @include respond-to(medium) {
     width: auto;
     margin: 0;
