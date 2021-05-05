@@ -20,6 +20,11 @@ module.exports = {
       .end()
       .use("vue-svg-loader")
       .loader("vue-svg-loader");
+
+    config.plugin("html").tap((args) => {
+      args[0].minify = false;
+      return args;
+    });
   },
 
   configureWebpack: {
