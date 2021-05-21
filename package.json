@@ -12,7 +12,7 @@
     "@beyonk/google-fonts-webpack-plugin": "^1.5.0",
     "core-js": "^3.6.5",
     "install": "^0.13.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "npm": "^7.11.2",
     "particles.vue": "^2.9.3",
     "vue": "^2.6.12",
