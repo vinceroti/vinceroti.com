@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build && s3-upload",
+    "build": "vue-cli-service build && npm run deploy",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve"
+    "dev": "vue-cli-service serve",
+    "deploy": "cd ./dist && s3-upload ./../aws-upload.conf.js"
   },
   "dependencies": {
     "@beyonk/google-fonts-webpack-plugin": "^1.5.0",

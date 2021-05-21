@@ -1,5 +1,5 @@
 module.exports = {
-  credentials: "aws-credentials.json",
-  bucketName: "example.com",
-  patterns: ["dist/*.**"],
+  credentials: "../aws-credentials.json",
+  bucketName: "vinceroti.com",
+  patterns: ["*/*.**", "*.**"],
 };
