@@ -69,7 +69,7 @@
                 and conventions quickly.
               </li>
               <li>
-                - Programmed in various dynamics such as pair programming, solp
+                - Programmed in various dynamics such as pair programming, solo
                 programming, and group collaboration.
               </li>
             </ul>
