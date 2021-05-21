@@ -143,7 +143,7 @@
               <li>Software Development</li>
               <li>Web Development</li>
               <li>Agile Methodologies</li>
-              <li>Object-Oriented Programming Front-end</li>
+              <li>Object-Oriented Programming</li>
               <li>Search Engine Optimization (SEO)</li>
               <li>ADA Compliance</li>
             </ul>
