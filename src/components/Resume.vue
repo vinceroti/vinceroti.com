@@ -47,6 +47,10 @@
                 - Managed communication and deployments with backend development
                 team for successful release
               </li>
+              <li>
+                - Worked closely with web project managers to design and
+                implement web applications, branded websites, and features
+              </li>
             </ul>
           </ResumeEntry>
         </li>
@@ -94,6 +98,17 @@
       <h3>Projects</h3>
       <ul>
         <li>
+          <ResumeEntry title="BT TRIONES">
+            <p>
+              This is an vue electron application that hooks into Triones
+              bluetooth devices. This allows users to control Troines bluetooth
+              device from their Windows Or Mac Machine, allowing a user to
+              change it's color based on value, audio or screen pixel
+            </p>
+            <p>
+              Tech - Vue, Vuex, NodeJS, Electron, SCSS, Chrome Bluetooth API
+            </p>
+          </ResumeEntry>
           <ResumeEntry title="GOOGLE SKI PLOTTER">
             <p>
               Google ski plotter is an Express/Vue web app that takes your
