@@ -2,12 +2,11 @@
   <section class="about">
     <h2>About</h2>
     <p>
-      I am a hard-working, positive, and supportive team member. Aside from
-      those initial qualities, I strive in helping others achieve success to
-      ultimately grow as a team. I’m also not afraid of trying new things and
-      taking risks to fulfill goals, in order to create unique and beautiful
-      things. Being able to share what I create with the world is the driving
-      force that truly makes me so passionate about coding.
+      I strive to help others achieve success to ultimately grow as a team. I'm
+      always looking to try new things and am excited to learn emerging best
+      practices, in order to create unique and engaging experiences. Being able
+      to share what I create with the world is the driving force that truly
+      makes me so passionate about coding.
     </p>
   </section>
 </template>

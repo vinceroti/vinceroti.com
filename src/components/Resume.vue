@@ -20,13 +20,12 @@
             position="Frontend Web Developer"
           >
             <p>
-              During my tenure at K2, I've built sites on to Demandware,
-              maintained legacy software on Ruby on Rails, rebuilt and
-              overhauled our Rails and Demandware sites to our team developed
-              tech stack (Nuxt.js / ContentStack / Bigcommerce / Amplience) with
-              scalability and best practices in mind All while helping onboard
-              contractors to meet critical deadlines and helping our DevOps team
-              to ensure successful releases and site stability.
+              During my tenure at K2, I've developed sites on our team-developed
+              tech stack (Nuxt.js/Contentstack/Bigcommerce/Amplience) from
+              Demandware & Ruby On Rails with scalability and best practices in
+              mind. All while helping onboard contractors to meet critical
+              deadlines and helping our DevOps team to ensure successful
+              releases and site stability.
             </p>
             <ul>
               <li>
