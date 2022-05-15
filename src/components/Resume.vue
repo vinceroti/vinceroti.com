@@ -15,7 +15,51 @@
       <ul>
         <li>
           <ResumeEntry
-            date="May 2017 to Current"
+            date="Aug. 2021 to Current"
+            title="WARNER BROS. GAMES"
+            position="Software Engineer - Frontend"
+          >
+            <p>
+              Develop and maintain frontend of Warner Bro Games account site,
+              OAuth SDK, and internal dashboard.
+            </p>
+            <ul>
+              <li>
+                - Implementation of Vue and/or Vuex for account site, internal
+                dashboard, and oAuth SDK
+              </li>
+              <li>
+                - Understanding of complex situations an account site user might
+                run into and develop solutions via workflows to remediate those
+                problems
+              </li>
+              <li>
+                - Implement and support services that power in-game online
+                services
+              </li>
+              <li>
+                - Collaborate with other engineers (frontend and backend) to
+                develop features that support sites, SDK, and internal
+                dashboard.
+              </li>
+              <li>
+                - Work closely with designers using Figma to create features
+              </li>
+              <li>
+                - Design initiatives for new features from clients and internal
+                technical debt
+              </li>
+              <li>
+                - Ensure best practices for ADA and GDPR compliance - Write and
+                review code, develop documentation, and debug problems, live, on
+                complex systems
+              </li>
+            </ul>
+          </ResumeEntry>
+        </li>
+        <li>
+          <ResumeEntry
+            date="May 2017 to Aug. 2021"
             title="K2 SPORTS"
             position="Frontend Web Developer"
           >
@@ -30,9 +74,8 @@
             <ul>
               <li>
                 - Migration of marketing/e-commerce sites from Demandware to
-                Single Page Applications
+                Single Page Applications with SSR (ex: k2snow.com)
               </li>
-              with SSR (ex: k2snow.com)
               <li>
                 - Implementation of Vue/Vue-cli/Nuxt for Server Side Rendering
                 of all marketing and ecommerce sites
@@ -57,7 +100,7 @@
           <ResumeEntry
             date="Aug. 2016 to Dec. 2016"
             title="DEV BOOTCAMP"
-            position="Web Development Graduate"
+            position="Fullstack Web Developer"
           >
             <p>
               I graduated from Dev Bootcamp which is a 19-week intensive
