@@ -25,7 +25,7 @@
 
 <script>
 import VueImage from "@/components/VueImage.vue";
-import headshotSrc from "@/assets/vince.jpg";
+import headshotSrc from "@/assets/vince.png";
 import github from "@/assets/github.svg";
 import linkedin from "@/assets/linkedin.svg";
 

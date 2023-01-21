@@ -36,6 +36,7 @@ module.exports = {
             variants: ["400", "400i", "600", "600i"],
           },
         ],
+        apiUrl: "https://gwfh.mranftl.com/api/fonts",
         /* ...options */
       }),
     ],
