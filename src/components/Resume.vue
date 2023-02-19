@@ -65,7 +65,7 @@
           >
             <p>
               During my tenure at K2, I've developed sites on our team-developed
-              tech stack (Nuxt.js/Contentstack/Bigcommerce/Amplience) from
+              tech stack (Nuxt.js / Contentstack / Bigcommerce / Amplience) from
               Demandware & Ruby On Rails with scalability and best practices in
               mind. All while helping onboard contractors to meet critical
               deadlines and helping our DevOps team to ensure successful
@@ -246,9 +246,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-p {
-  display: flex;
-}
 h2 {
   width: 100%;
   text-align: center;
