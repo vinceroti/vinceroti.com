@@ -246,6 +246,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+p {
+  display: flex;
+}
 h2 {
   width: 100%;
   text-align: center;

@@ -141,8 +141,7 @@ svg {
   padding: 0;
   background: #f3f7f8;
   @include respond-to(medium) {
-    opacity: 0;
-    visibility: none;
+    display: none;
   }
 }
 .menu-open {
