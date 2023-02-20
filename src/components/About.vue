@@ -2,11 +2,10 @@
   <section class="about">
     <h2>About</h2>
     <p>
-      I strive to help others achieve success to ultimately grow as a team. I'm
-      always looking to try new things and am excited to learn emerging best
-      practices, in order to create unique and engaging experiences. Being able
-      to share what I create with the world is the driving force that truly
-      makes me so passionate about coding.
+      Frontend software engineer with a passion for building unique,
+      fast-loading, engaging user experiences. From e-commerce platforms to
+      account websites with best practices such as GDPR compliance and
+      accessibility.
     </p>
   </section>
 </template>

@@ -21,7 +21,8 @@
           >
             <p>
               Develop and maintain frontend of Warner Bro Games account site,
-              OAuth SDK, and internal dashboard.
+              OAuth SDK, and internal dashboard using Typescript, Vue 3, and
+              Vite
             </p>
             <ul>
               <li>
@@ -34,16 +35,13 @@
                 problems
               </li>
               <li>
-                - Implement and support services that power in-game online
-                services
-              </li>
-              <li>
                 - Collaborate with other engineers (frontend and backend) to
                 develop features that support sites, SDK, and internal
                 dashboard.
               </li>
               <li>
-                - Work closely with designers using Figma to create features
+                - Work closely with product designers using Figma to create
+                features
               </li>
               <li>
                 - Design initiatives for new features from clients and internal
