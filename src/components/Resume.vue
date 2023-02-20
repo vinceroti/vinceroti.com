@@ -199,6 +199,7 @@
               <li>Web Development</li>
               <li>Agile Methodologies</li>
               <li>Object-Oriented Programming</li>
+              <li>GDPR Compliance</li>
               <li>Search Engine Optimization (SEO)</li>
               <li>ADA Compliance</li>
             </ul>
@@ -209,13 +210,15 @@
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>Nuxt.js</li>
-              <li>Vue</li>
+              <li>Vue/Vue 3</li>
               <li>Vuex</li>
               <li>Node.js</li>
               <li>CSS/SCSS</li>
+              <li>Webpack</li>
+              <li>Vite</li>
               <li>Express</li>
               <li>Git</li>
-              <li>Rspec/Jasmine</li>
+              <li>Jest/Vitest</li>
               <li>React.js</li>
               <li>Ruby on Rails</li>
               <li>jQuery</li>
@@ -223,7 +226,7 @@
               <li>Docker</li>
               <li>AWS</li>
               <li>Heroku</li>
-              <li>Demandware</li>
+              <li>Rspec/Jasmine</li>
               <li>Google Tag Manager</li>
             </ul>
           </li>
