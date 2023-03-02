@@ -2,10 +2,10 @@
   <section class="about">
     <h2>About</h2>
     <p>
-      Frontend software engineer with a passion for building unique,
-      fast-loading, engaging user experiences. From e-commerce platforms to
-      account websites with best practices such as GDPR compliance and
-      accessibility.
+      Software engineer with a passion for building unique, fast-loading,
+      performant, and engaging user experiences. Experience building a variety
+      of websites from ecommerce platforms to account websites with best
+      practices such as GDPR compliance and accessibility.
     </p>
   </section>
 </template>

@@ -22,36 +22,33 @@
             <p>
               Develop and maintain frontend of Warner Bro Games account site,
               OAuth SDK, and internal dashboard using Typescript, Vue 3, and
-              Vite
+              Vite. Enabling our game teams and users to have accounts, email
+              sign-ups, cross-play, and cloud saving.
             </p>
             <ul>
               <li>
-                - Implementation of Vue and/or Vuex for account site, internal
-                dashboard, and oAuth SDK
+                - Implementation of Vue and/or Vuex for Warner Bro Games account
+                site, internal dashboard, and OAuth SDK.
               </li>
               <li>
-                - Understanding of complex situations an account site user might
-                run into and develop solutions via workflows to remediate those
-                problems
+                - Developed a deep understanding of our business logic and our
+                user’s journey and flows, to help troubleshot bugs and provide
+                efficient solutions
               </li>
               <li>
-                - Collaborate with other engineers (frontend and backend) to
-                develop features that support sites, SDK, and internal
-                dashboard.
+                - Collaborate with other engineers to build features that
+                provide solutions to user journeys and help build tools for
+                other game teams
               </li>
               <li>
                 - Work closely with product designers using Figma to create
-                features
+                features and improve user experiences
               </li>
               <li>
                 - Design initiatives for new features from clients and internal
                 technical debt
               </li>
-              <li>
-                - Ensure best practices for ADA and GDPR compliance - Write and
-                review code, develop documentation, and debug problems, live, on
-                complex systems
-              </li>
+              <li>- Ensure best practices for ADA and GDPR compliance</li>
             </ul>
           </ResumeEntry>
         </li>
