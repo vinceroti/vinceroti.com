@@ -20,35 +20,39 @@
             position="Software Engineer - Frontend"
           >
             <p>
-              Develop and maintain frontend of Warner Bro Games account site,
-              OAuth SDK, and internal dashboard using Typescript, Vue 3, and
-              Vite. Enabling our game teams and users to have accounts, email
-              sign-ups, cross-play, and cloud saving.
+              Skilled and experienced lead frontend engineer responsible for
+              building and maintaining various web applications and features for
+              Warner Bro Games using Typescript, Vue 3, and Vite.
             </p>
             <ul>
               <li>
-                - Implementation of Vue and/or Vuex for Warner Bro Games account
-                site, internal dashboard, and OAuth SDK.
+                - Built and maintained frontend of Warner Bro Games account
+                site, OAuth SDK, and internal dashboard using Typescript, Vue 3,
+                and Vite.
               </li>
               <li>
-                - Developed a deep understanding of our business logic and our
-                user’s journey and flows, to help troubleshot bugs and provide
-                efficient solutions
+                - Attracted and retained millions of users through email
+                sign-ups, account creations, cross-play, cloud saving, and
+                Twitch drops features.
               </li>
               <li>
-                - Collaborate with other engineers to build features that
-                provide solutions to user journeys and help build tools for
-                other game teams
+                - Collaborated with other engineers to deliver features that
+                enhanced user journeys and resolved bugs based on requirements.
               </li>
               <li>
-                - Work closely with product designers using Figma to create
-                features and improve user experiences
+                - Created adaptive sign-up journeys for various contexts and
+                devices, displaying suitable text and images based on the user’s
+                source (game or OAuth client).
               </li>
               <li>
-                - Design initiatives for new features from clients and internal
-                technical debt
+                - Migrated the tech stack from Vue 2 to Vue 3, Webpack to Vite,
+                and Vuex to Pinia with Typescript improvements.
               </li>
-              <li>- Ensure best practices for ADA and GDPR compliance</li>
+              <li>
+                - Ensured best practices for ADA and GDPR compliance by
+                following the guidelines for web accessibility, data protection,
+                and user rights.
+              </li>
             </ul>
           </ResumeEntry>
         </li>
