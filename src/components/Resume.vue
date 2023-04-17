@@ -20,11 +20,16 @@
             position="Software Engineer - Frontend"
           >
             <p>
-              Skilled and experienced frontend engineer responsible for building and maintaining various applications and OAuth SDK for Warner Bro Games using Typescript / Vue 3 / Vite.
+              Skilled and experienced frontend engineer responsible for building
+              and maintaining various applications and OAuth SDK for Warner Bro
+              Games using Typescript / Vue 3 / Vite.
             </p>
             <ul>
               <li>
-                - Built and maintained frontend of Warner Bro Games account site, OAuth SDK, and internal dashboard using Typescript, Vue 3, and Vite. Served as the main point of contact for features, design, and libraries.
+                - Built and maintained frontend of Warner Bro Games account
+                site, OAuth SDK, and internal dashboard using Typescript, Vue 3,
+                and Vite. Served as the main point of contact for features,
+                design, and libraries.
               </li>
               <li>
                 - Attracted and retained millions of users through email
