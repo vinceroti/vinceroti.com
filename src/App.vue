@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <FirstLoad />
     <transition name="fade" appear>
       <NavBar :in-view="elmInView" />
     </transition>
@@ -29,6 +30,7 @@ import About from "@/components/About.vue";
 import Resume from "@/components/Resume.vue";
 import Observer from "@/components/Observer.vue";
 import Particles from "particles.vue";
+import FirstLoad from "@/components/FirstLoad.vue";
 import Vue from "vue";
 
 Vue.use(Particles);
@@ -41,6 +43,7 @@ export default {
     About,
     Resume,
     Observer,
+    FirstLoad,
   },
   metaInfo: {
     title: "Vince Roti - Web Developer",
