@@ -18,6 +18,9 @@ export default {
   mounted() {
     this.shrink = true;
     this.slideOut = true;
+    setTimeout(() => {
+      document.body.classList.add("loaded");
+    }, 1200);
   },
 };
 </script>
@@ -32,14 +35,7 @@ export default {
   animation: shrink 0.5s ease-in-out forwards;
   animation-delay: 0.3s;
 }
-@keyframes shrink {
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
+
 .first-load {
   display: flex;
   justify-content: center;
@@ -54,12 +50,6 @@ export default {
   z-index: 9999;
   animation: slide 0.5s ease-in-out forwards;
   animation-delay: 0.75s;
-}
-
-@keyframes slide {
-  100% {
-    top: -120%;
-  }
 }
 
 .lds-ripple {
@@ -106,6 +96,19 @@ export default {
     width: 144px;
     height: 144px;
     opacity: 0;
+  }
+}
+@keyframes slide {
+  100% {
+    top: -120%;
+  }
+}
+@keyframes shrink {
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 </style>

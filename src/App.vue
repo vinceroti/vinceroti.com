@@ -61,7 +61,7 @@ export default {
   },
   data() {
     return {
-      loaded: true,
+      loaded: false,
       elmInView: "home",
       options: {
         particles: {
@@ -162,9 +162,6 @@ export default {
         retina_detect: true,
       },
     };
-  },
-  mounted() {
-    this.loaded = true;
   },
   methods: {
     inView(id) {

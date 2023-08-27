@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: color(white);
+  overflow: hidden;
+  &.loaded {
+    overflow: auto;
+  }
 }
 
 body,
@@ -12,6 +16,7 @@ body,
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .wrapper {
   background-color: color(white);
