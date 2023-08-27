@@ -188,6 +188,9 @@ section {
     padding: 0;
   }
 }
+.container {
+  overflow-x: clip;
+}
 #tsparticles {
   position: fixed;
   z-index: z-index(behind);

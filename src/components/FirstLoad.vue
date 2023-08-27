@@ -50,7 +50,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #212020;
+  background: #252e30;
   z-index: 9999;
   animation: slide 0.5s ease-in-out forwards;
   animation-delay: 0.75s;

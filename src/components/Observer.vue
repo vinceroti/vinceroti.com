@@ -41,9 +41,11 @@ export default {
 <style lang="scss" scoped>
 .slot {
   opacity: 0;
-  transition: 0.7s opacity linear;
+  transform: translateX(100%);
+  transition: 0.7s opacity linear, 1s transform ease-in-out;
   &.show {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>
