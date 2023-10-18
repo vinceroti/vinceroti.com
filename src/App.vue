@@ -8,13 +8,13 @@
       <main>
         <div class="container">
           <Observer @in-view="inView('home')" :no-transition="true">
-            <Home id="home" />
+            <Home id="home" class="section-height" />
           </Observer>
           <Observer @in-view="inView('about')">
-            <About id="about" />
+            <About id="about" class="section-height" />
           </Observer>
           <Observer @in-view="inView('resume')">
-            <Resume id="resume" />
+            <Resume id="resume" class="section-height" />
           </Observer>
         </div>
       </main>
@@ -175,7 +175,7 @@ export default {
 @import "css-reset-and-normalize/scss/reset-and-normalize.scss";
 @import "./assets/scss/base/_index.scss";
 
-section {
+.section-height {
   margin: auto 0;
   display: flex;
   flex-wrap: wrap;
