@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <FirstLoad />
+    <FirstLoad class="section-height" />
     <transition name="fade" appear>
       <NavBar :in-view="elmInView" />
     </transition>
