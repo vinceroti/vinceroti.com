@@ -61,12 +61,14 @@ export default {
     click(e) {
       e.preventDefault();
       const elm = document.querySelector(e.target.hash);
-      if (elm)
+      if (elm) {
+        const rect = elm.getBoundingClientRect();
         window.scroll({
-          top: elm.offsetTop,
+          top: rect.top + window.scrollY,
           left: 0,
           behavior: "smooth",
         });
+      }
     },
   },
 };

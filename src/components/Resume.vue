@@ -300,6 +300,7 @@ li {
   }
 }
 .resume {
+  padding-top: spacing(base);
   @include respond-to(medium) {
     width: 95%;
   }
