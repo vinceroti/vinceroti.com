@@ -26,7 +26,10 @@
             </p>
             <ul>
               <li>
-                - Facilitated feature development for Warner Bros. Games account site, OAuth SDK, and internal game/network dashboard using Typescript, Vue 3, and Vite, enhancing AAA game studios capabilities for their high-profile releases.
+                - Facilitated feature development for Warner Bros. Games account
+                site, OAuth SDK, and internal game/network dashboard using
+                Typescript, Vue 3, and Vite, enhancing AAA game studios
+                capabilities for their high-profile releases.
               </li>
               <li>
                 - Attracted and retained millions of users through email
@@ -34,7 +37,8 @@
                 Twitch drops features.
               </li>
               <li>
-                - Led collaboration with engineers and contractors to streamline user features and debug efficiently, adhering to project specs.
+                - Led collaboration with engineers and contractors to streamline
+                user features and debug efficiently, adhering to project specs.
               </li>
               <li>
                 - Created adaptive sign-up journeys for various contexts and
