@@ -26,10 +26,7 @@
             </p>
             <ul>
               <li>
-                - Built and maintained frontend of Warner Bro Games account
-                site, OAuth SDK, and internal dashboard using Typescript, Vue 3,
-                and Vite. Served as the main point of contact for features,
-                design, and libraries.
+                - Facilitated feature development for Warner Bros. Games account site, OAuth SDK, and internal game/network dashboard using Typescript, Vue 3, and Vite, enhancing AAA game studios capabilities for their high-profile releases.
               </li>
               <li>
                 - Attracted and retained millions of users through email
@@ -37,12 +34,11 @@
                 Twitch drops features.
               </li>
               <li>
-                - Collaborated with other engineers to deliver features that
-                enhanced user journeys and resolved bugs based on requirements.
+                - Led collaboration with engineers and contractors to streamline user features and debug efficiently, adhering to project specs.
               </li>
               <li>
                 - Created adaptive sign-up journeys for various contexts and
-                devices, displaying suitable text and images based on the user’s
+                devices, displaying suitable text and images based on the user's
                 source (game or OAuth client).
               </li>
               <li>
