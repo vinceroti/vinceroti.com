@@ -7,7 +7,8 @@
         target="_blank"
         class="download"
         title="Download Vince Roti's Resume"
-        ><download />
+      >
+        <download />
       </a>
     </h2>
     <div>
@@ -20,17 +21,14 @@
             position="Software Engineer - Frontend"
           >
             <p>
-              Skilled and experienced frontend engineer responsible for building
-              and maintaining various applications and OAuth SDK for Warner Bro
-              Games using Typescript / Vue 3 / Vite.
+              Specialized in the development and maintenance of applications
+              using Typescript, Vue 3, Vite, and Nuxt.js. Key projects included
+              the account site, OAuth SDK, game/network dashboard, and marketing
+              reward pages (Twitch drop/code redemption), all contributing to
+              enhanced user engagement and support for AAA studios major game
+              releases.
             </p>
             <ul>
-              <li>
-                - Facilitated feature development for Warner Bros. Games account
-                site, OAuth SDK, and internal game/network dashboard using
-                Typescript, Vue 3, and Vite, enhancing AAA game studios
-                capabilities for their high-profile releases.
-              </li>
               <li>
                 - Attracted and retained millions of users through email
                 sign-ups, account creations, cross-play, cloud saving, and
@@ -46,8 +44,10 @@
                 source (game or OAuth client).
               </li>
               <li>
-                - Migrated the tech stack from Vue 2 to Vue 3, Webpack to Vite,
-                and Vuex to Pinia with Typescript improvements.
+                - Transitioned multiple tech stacks to Vue 3, Vite, and Pinia
+                with Typescript upgrades, and initiated Nuxt.js for key
+                marketing initiatives like Twitch drops and code redemption
+                pages.
               </li>
               <li>
                 - Ensured best practices for ADA and GDPR compliance by
