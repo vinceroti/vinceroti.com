@@ -16,7 +16,48 @@
       <ul>
         <li>
           <ResumeEntry
-            date="Aug. 2021 to Current"
+            date="Feb. 2024 to Present"
+            title="WARNER BROS. GAMES"
+            position="Senior Software Engineer"
+          >
+            <p>
+              Transitioned to a senior role, taking on greater responsibilities
+              and leadership within the team. Specialized in driving
+              collaboration, enhancing technical architecture, and delivering
+              features to support AAA game releases.
+            </p>
+            <ul>
+              <li>
+                - Led contractors in building custom dashboards, including a
+                customer service tool, and facilitated daily standups to ensure
+                alignment, resolve blockers, and maintain momentum.
+              </li>
+              <li>
+                - Served as the main point of contact for dashboard features and
+                work, managing tasks in Jira, assigning them to contractors, or
+                working on them directly as needed.
+              </li>
+              <li>
+                - Collaborated with directors, game studios, and project
+                managers to define and deliver dashboard features aligned with
+                business needs.
+              </li>
+              <li>
+                - Contributed to my previous team by developing major features
+                and providing technical guidance, including significant
+                integrations on the account site, such as collaborating with the
+                MAX team.
+              </li>
+              <li>
+                - Refactored key components of the dashboard to improve user
+                experience, performance, and scalability.
+              </li>
+            </ul>
+          </ResumeEntry>
+        </li>
+        <li>
+          <ResumeEntry
+            date="Aug. 2021 to Feb. 2024"
             title="WARNER BROS. GAMES"
             position="Software Engineer - Frontend"
           >
