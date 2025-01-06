@@ -21,10 +21,11 @@
             position="Senior Software Engineer"
           >
             <p>
-              Transitioned to a senior role, taking on greater responsibilities
-              and leadership within the team. Specialized in driving
-              collaboration, enhancing technical architecture, and delivering
-              features to support AAA game releases.
+              Transitioned to a senior role on the game services team, taking on
+              greater responsibilities and leadership within the team.
+              Specialized in driving collaboration, enhancing technical
+              architecture, and delivering features to support AAA game
+              releases.
             </p>
             <ul>
               <li>
